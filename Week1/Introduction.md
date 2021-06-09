@@ -23,7 +23,7 @@
 - Data-driven chart selection
 - Multi-view composition
 
-![1](/Users/timsmac/Desktop/1.png)
+![1](./images/1.png)
 
 **Spatial and Temporal Visualization**
 
@@ -31,7 +31,7 @@
 - Time series charts and animation
 - Networks, graphs, and hierarchies
 
-![2](/Users/timsmac/Desktop/2.png)
+![2](./images/2.png)
 
 **Perception, Cognition, Interaction**
 
@@ -39,7 +39,7 @@
 - Cognitive model and visual analytics
 - Interactive dynamics and design
 
-![3](/Users/timsmac/Desktop/3.png)
+![3](./images/3.png)
 
 
 
@@ -51,7 +51,7 @@
 - Script-based transformation
 - Automated data pipeline
 
-![4](/Users/timsmac/Desktop/4.png)
+![4](./images/4.png)
 
 **Non-numerical Data Mining**
 
@@ -59,7 +59,7 @@
 - Graphically weighted Regr (Spatial)
 - Semantic parsing (Visual)
 
-![5](/Users/timsmac/Desktop/5.png)
+![5](./images/5.png)
 
 **AI-aided Knowledge Discovery**
 
@@ -67,7 +67,7 @@
 - Association rule mining
 - Causal inference 
 
-![6](/Users/timsmac/Desktop/6.png)
+![6](./images/6.png)
 
 
 
