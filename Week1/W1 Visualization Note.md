@@ -21,7 +21,12 @@ Practical, hyperlink-rich blog article by industry expert that triangulates thre
 
 ![9](./images/9.png)
 
+* [**Introduction to Vega-Lite / Altair**](https://github.com/uwdata/visualization-curriculum) A series of interactive notebooks that teaches you how to make statistical graphics with declarative visualization grammar. Choose Python through Colab and JavaScript through Observable.
+
+![10](./images/10.png)
+
 <br>
+
 
 <h3>Interesting Reads</h3>
 
@@ -40,7 +45,7 @@ This our communal gold mine, please nominate interesting resources that you have
 UW - DV
 
 * REQUIRED Chapter 1: Information Visualization, in Readings in Information Visualization. Stuart Card, Jock Mackinlay, and Ben Shneiderman. 1999. (CMS - Introduction)
-* REQUIRED Introduction to Vega-Lite / Altair. One of: [JavaScript (Observable)](), [Python (Colab)](https://colab.research.google.com/github/uwdata/visualization-curriculum/blob/master/altair_introduction.ipynb), [Python (Python)](https://github.com/uwdata/visualization-curriculum/blob/master/altair_introduction.ipynb).
+* REQUIRED Introduction to Vega-Lite / Altair. One of: [JavaScript (Observable)](https://observablehq.com/collection/@uwdata/visualization-curriculum), [Python (Colab)](https://colab.research.google.com/github/uwdata/visualization-curriculum), [Python (Python)](https://github.com/uwdata/visualization-curriculum).
 * OPTIONAL Decision to Launch the Challenger, in Visual Explanations. Edward Tufte. (See also a critique of Tufte's argument.)
 
 GA - IIV
