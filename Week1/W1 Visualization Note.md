@@ -5,31 +5,31 @@
 * [**The Purpose of Visualization (Stanford CS 448B Slides)**](https://magrawala.github.io/cs448b-fa20/assets/slides/Lec01-purpose.pdf)
 Concise, illustrated slide that covers the definition and rationale of visualization. Recommend to read pdf page 1-25. 
 
-![7](./images/7-.png)
+[![7](./images/7.png)](https://magrawala.github.io/cs448b-fa20/assets/slides/Lec01-purpose.pdf)
 
 <br>
 
 * [**Information Visualization, in Readings in Information Visualization by C,M,S - Chapter 1**](https://magrawala.github.io/cs448b-fa20/assets/docs/CardMackinlaySchneid-Chap1.pdf)
 Comprehensive, research-oriented book chapter on info viz. Used in many courses, it may give you different angles to think about visualization and how it amplifies our cognition. 
 
-![8](./images/8-.png)
+[![8](./images/8.png)](https://magrawala.github.io/cs448b-fa20/assets/docs/CardMackinlaySchneid-Chap1.pdf)
 
 <br>
 
 * [**Data Visualization “Versus” UI and Data Science**](https://medium.com/@lynn_72328/data-visualization-versus-ui-and-data-science-d59182d58af4)
 Practical, hyperlink-rich blog article by industry expert that triangulates three interrelated fields in real-world context: data viz, UI design, and data science. 
 
-![9](./images/9.png)
+[![9](./images/9.png)](https://medium.com/@lynn_72328/data-visualization-versus-ui-and-data-science-d59182d58af4)
 
 * [**Introduction to Vega-Lite / Altair**](https://github.com/uwdata/visualization-curriculum) A series of interactive notebooks that help you contextualize the concepts of visual encoding by writing in declarative visualization grammar. Choose Python through Colab and JavaScript through Observable.
 
-![10](./images/10.png)
+[![10](./images/10.png)](https://github.com/uwdata/visualization-curriculum)
 
 <br>
 
 * [**Design Study Methodology: Reflections from the Trenches and the Stacks.**](http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/) Drawing from practical and theoretical experience, this resource proposes a 9-stage visualization design study methodology framework, and warns people of common pitfalls. Important read for those serious about design study and evaluation.
 
-![11](./images/11.png)
+[![11](./images/11.png)](http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/)
 
 <br>
 <br>
