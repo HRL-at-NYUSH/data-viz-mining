@@ -11,7 +11,9 @@ Concise, illustrated slide that covers the definition and rationale of visualiza
 * [**Information Visualization, in Readings in Information Visualization by C,M,S - Chapter 1**](https://magrawala.github.io/cs448b-fa20/assets/docs/CardMackinlaySchneid-Chap1.pdf)
 Comprehensive, research-oriented book chapter on info viz. Used in many courses, it may give you different angles to think about visualization and how it amplifies our cognition. 
 ![8](./images/8.png)
+
 <br>
+
 * [**Data Visualization “Versus” UI and Data Science**](https://medium.com/@lynn_72328/data-visualization-versus-ui-and-data-science-d59182d58af4)
 Practical, hyperlink-rich blog article by industry expert that triangulates three interrelated fields in real-world context: data viz, UI design, and data science. 
 ![9](./images/9.png)
