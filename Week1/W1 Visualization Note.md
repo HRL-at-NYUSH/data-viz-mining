@@ -12,7 +12,7 @@ Concise, illustrated slide that covers the definition and rationale of visualiza
 * [**Information Visualization, in Readings in Information Visualization by C,M,S - Chapter 1**](https://magrawala.github.io/cs448b-fa20/assets/docs/CardMackinlaySchneid-Chap1.pdf)
 Comprehensive, research-oriented book chapter on info viz. Used in many courses, it may give you different angles to think about visualization and how it amplifies our cognition. 
 
-![8](./images/8a.png)
+![8](./images/8b.png)
 
 <br>
 
