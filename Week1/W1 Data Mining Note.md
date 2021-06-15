@@ -1,6 +1,6 @@
-##W1 - Systematic Data Cleaning
+## W1 - Systematic Data Cleaning
 
-###Overview
+### Overview
 
 Before we start, I want to quickly mention that the materials here is not as organized and time-proven as those in the visualization note. Despite being vital to quality and notoriously time-consuming, there seem to be very few courses that teach data cleaning, especially how to systematically clean data. 
 
