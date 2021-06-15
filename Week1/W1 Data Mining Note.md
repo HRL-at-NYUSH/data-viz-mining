@@ -1,6 +1,6 @@
-<h2>W1 - Systematic Data Cleaning</h2>
+##W1 - Systematic Data Cleaning
 
-<h3>Overview</h3>
+###Overview
 
 Before we start, I want to quickly mention that the materials here is not as organized and time-proven as those in the visualization note. Despite being vital to quality and notoriously time-consuming, there seem to be very few courses that teach data cleaning, especially how to systematically clean data. 
 
@@ -77,9 +77,51 @@ The updating cost could be lowered if all the data cleaning and analysis are imp
 
 While cleaning the data, it is a good practice to keep the original value for future reference. It might be the case that new finding updates our understanding of the data, and previously meaningless distinction become important. 
 
-One such example is with the Occupation description variable in Census dataset. I used to merge "Keeping House", "House Keeper" together into the term "House Keeper". But later I came across a [historical report from 1900](https://www2.census.gov/library/publications/decennial/1900/occupations/occupations-part-5.pdf) on the US Census Bureau website. It says "Keeping House" means a non-paid homemaker's work, while "House Keeper" indicates the person is earning an income. Since these two descriptions are very common (mounting to over 10% of the dataset), the distinction is too important to be ignored. Now we have to consult the reports for each year on the meaning difference, then re-implement the cleaning and re-run on the original data. Here we see the value of always retaining the original information.
+One such example is with the Occupation description variable in Census dataset. I used to merge "Keeping House", "House Keeper" together into the term "House Keeper". But later I came across a [historical report from 1900](https://www2.census.gov/library/publications/decennial/1900/occupations/occupations-part-5.pdf) on the US Census Bureau website. It says "Keeping House" means a non-paid homemaker's work, while "House Keeper" indicates the person is earning an income. Since these two descriptions are very common (mounting to over 10% of the dataset), the distinction is too important to be ignored. Now we have to consult the reports for each year on the meaning difference, then re-implement the cleaning and re-run on the original data. Here we see the value of always retaining as much information as possible.
 
+### 4. Think and design for the `long term`
 
-### 4. Think and design for the `long-term`
+There are several aspects to think about when designing for the long term.
+
+1. **Reproducibility**: can future researchers of the current system reproduce the results we are generating now? Will they understand the meaning of variables and current cleaning approaches? Can they adjust the methods and assumptions and re-run data cleaning processes?
+2. **Extensibility**: can future developers add new functionalities to the current system easily? Can they introduce the new changes without affecting the normal functions of the system?
+3. **Scaling**: will the system work properly when the size/dimension of the data is 10x or 100x larger, when the number of users is 10x or 100x greater? How easy it is to up-scale the system?
+4. **Future compatibility**: what are the new trends in underlying technology stack, such as data storage (HDFS/Cloud), visualization medium (VR/AR), etc. How to create the opportunities for future developers and users to transition the system into new technology stack easily? 
+
+## Potential Directions
+
+1. Data processing pipeline / management system
+	1. Storage medium and sharing
+	2. Data version control
+	3. **Data codebook**
+
+	![code_pipeline](./images/code_pipeline.png)
+	
+	![data_versions](./images/data_versions.png)
+
+2. Script-based data transformation / cleaning
+	1. Data profiling
+	2. Smart fuzzy matching
+	3. Program synthesis
+
+	![fuzzy_matching](./images/fuzzy_matching.png)
+	
+3. Automatic/Semi-automatic Data Cleaning
+4. Visualization and GUI for the above steps
+	
+	![trifacta](./images/trifacta.gif)
+	
+	![microsoft_ml_drag_drop](./images/microsoft_ml_drag_drop.gif)
+
+<br>
+
+**Related research papers (updating)**
+
+- Data Cleaning - Overview and Emerging Challenges
+- Self-Service Data Preparation - Research to Practice
+- Wrangler - Interactive Visual Specification of Data Transformation Scripts
+- AlphaClean - Automatic Generation of Data Cleaning Pipelines
+- A Demonstration of DBWipes - Clean as You Query
+
 
 
