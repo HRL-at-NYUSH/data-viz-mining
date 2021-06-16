@@ -124,4 +124,12 @@ There are several aspects to think about when designing for the long term.
 - A Demonstration of DBWipes - Clean as You Query
 
 
+--
+
+Image Credits:
+
+- Fuzzy Matching 101: Cleaning and Linking Messy Data Across the Enterprise |  Data Ladder
+- Why Trifacta | Trifacta
+- Automatic Version Control for Data Scientists - KDnuggets
+- Data Version Control With Python and DVC – Real Python
 
