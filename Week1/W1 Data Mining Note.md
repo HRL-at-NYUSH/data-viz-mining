@@ -95,23 +95,23 @@ There are several aspects to think about when designing for the long term.
 	2. Data version control
 	3. **Data codebook**
 
-	![code_pipeline](./images/code_pipeline.png)
+	<img src="./images/code_pipeline.png" alt="code_pipeline" width="400"/>
 	
-	![data_versions](./images/data_versions.png)
+	<img src="./images/data_versions.png" alt="data_versions" width="400"/>
 
 2. Script-based data transformation / cleaning
 	1. Data profiling
 	2. Smart fuzzy matching
 	3. Program synthesis
 
-	![fuzzy_matching](./images/fuzzy_matching.png)
+	<img src="./images/fuzzy_matching.png" alt="fuzzy_matching" width="400"/>
 	
 3. Automatic/Semi-automatic Data Cleaning
 4. Visualization and GUI for the above steps
 	
-	![trifacta](./images/trifacta.gif)
+	<img src="./images/trifacta.gif" alt="trifacta" width="400"/>
 	
-	![microsoft_ml_drag_drop](./images/microsoft_ml_drag_drop.gif)
+	<img src="./images/microsoft_ml_drag_drop.gif" alt="microsoft_ml_drag_drop" width="400"/>
 
 <br>
 
