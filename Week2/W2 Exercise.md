@@ -6,7 +6,7 @@
 
 Please organize your discussion, explanation, and visualization into a report, in the format of **Colab notebook** or **Google Doc**. The materials you are creating now can be polished and turned into public-facing **data stories**, so it's a great chance to showcase your critical thinking and enrich your portfolio.
 
---
+****
 
 Here are a few prompt questions to help you structure your report:
 
@@ -57,7 +57,7 @@ domain, connecting the data to existing domain knowledge and giving it relevant 
 
 <br>
 
--- 
+****
 
 ### Insight Reports
 
@@ -66,7 +66,7 @@ domain, connecting the data to existing domain knowledge and giving it relevant 
 <br>
 <br>
 
--- 
+****
 
 ### Appendix
 
