@@ -97,7 +97,7 @@ There are several aspects to think about when designing for the long term.
 
 	<img src="./images/code_pipeline.png" alt="code_pipeline" width="400"/>
 	
-	<img src="./images/data_versions.png" alt="data_versions" width="400"/>
+	<img src="./images/data_versions.png" alt="data_versions" width="300"/>
 
 2. Script-based data transformation / cleaning
 	1. Data profiling
