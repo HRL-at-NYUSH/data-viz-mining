@@ -18,7 +18,7 @@ Here I will list my main take-aways and organize the discussions around them.
 
 ### 1. Overall, we need a systematic and robust `workflow`
 
-> ###The Workflow
+> ### The Workflow
 > 
 > * **Inspection**: Detect unexpected, incorrect, and inconsistent data.
 > * **Cleaning**: Fix or remove the anomalies discovered.
@@ -123,8 +123,7 @@ There are several aspects to think about when designing for the long term.
 - AlphaClean - Automatic Generation of Data Cleaning Pipelines
 - A Demonstration of DBWipes - Clean as You Query
 
-
---
+****
 
 Image Credits:
 
