@@ -39,7 +39,7 @@ domain, connecting the data to existing domain knowledge and giving it relevant 
 		- Try at least **one more chart type** for the same data and explain  the pros and cons of different options.
 		- Will interactivity and animation help convey the message? 
 
-4. What are the reasons that explain this insight? What are your assumptions?
+4. **What are the reasons that explain this insight? What are your assumptions?**
 	- Challenge yourself by asking if the insight you found really exists? Or is it simply due to improper framing and calculation methods? 
 		- Example: The absolute number of X in group A may be higher than in group B, but maybe the proportion of X in group B is higher.
 	- Reflect on the implicit assumptions you made, how will they affect the robustness of your argument? 
