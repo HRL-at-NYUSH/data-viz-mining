@@ -59,7 +59,7 @@ domain, connecting the data to existing domain knowledge and giving it relevant 
 
 -- 
 
-###Insight Reports
+### Insight Reports
 
 - 
 
@@ -68,7 +68,7 @@ domain, connecting the data to existing domain knowledge and giving it relevant 
 
 -- 
 
-###Appendix
+### Appendix
 
 More readings on Insight, Visual Reasoning, and Visualization Evaluation: 
 
