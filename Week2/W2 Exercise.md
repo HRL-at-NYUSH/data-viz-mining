@@ -61,7 +61,9 @@ domain, connecting the data to existing domain knowledge and giving it relevant 
 
 ### Insight Reports
 
-- 
+- [Changing Gender Composition of NYC Cooks - Tim Wu](https://colab.research.google.com/drive/1bz1Oykkjj_RmZ4qP_3l6glc5rk-TWLnh?usp=sharing)
+- ...
+
 
 <br>
 <br>
