@@ -65,7 +65,7 @@ domain, connecting the data to existing domain knowledge and giving it relevant 
 - [Changing Gender Composition of NYC Cooks - Tim Wu](https://colab.research.google.com/drive/1bz1Oykkjj_RmZ4qP_3l6glc5rk-TWLnh?usp=sharing)
 - [Data Exploration on Italian Immigrants and More - Amanda Huang [Work In Progress] ](https://nbviewer.jupyter.org/gist/Oysters1874/520d78e5e95f5b5cc95fb8114fafd3fa)
 - [Data Exploration on Gender in "Relationship to Head of House" - Pamela Pan](https://colab.research.google.com/drive/1aGcd9dWKFJY_dc_kETsN88yEE8tr2IMB?usp=sharing)
-
+- [Fixing Stereotype or Not? Gender vs Occupation - Simon Bian [Still Adjusting]](https://colab.research.google.com/drive/1vu1bShkzQ0iE3dTOZIyR-q-zSQaO0uaK?usp=sharing)
 
 <br>
 <br>
