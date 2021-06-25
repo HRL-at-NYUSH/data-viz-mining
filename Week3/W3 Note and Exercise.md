@@ -23,7 +23,7 @@ Note: The documentation site of Tableau is quite comprehensive and there is a lo
 
 Here is the interface of the academic exploratory data visualization platform [Voyager 2](https://vega.github.io/voyager2). 
 
-<img src="./images/voyager2.png" alt="voyager2" width="700"/>
+<img src="./images/voyager2.png" alt="voyager2" width="600"/>
 
 The platform categorized different fields into three categories: `Categorical`, `Temporal`, `Quantitative`. 
 
@@ -33,7 +33,7 @@ One common observation is that the common data types are mostly **numeric** (qua
 
 The data types we see above are often referred to as "**structured data**". These kinds of data have several good features, see the diagram below from [Lawtomated.com](https://lawtomated.com/structured-data-vs-unstructured-data-what-are-they-and-why-care/). 
 
-<img src="./images/unstructured.png" alt="unstructured" width="700"/>
+<img src="./images/unstructured.png" alt="unstructured" width="800"/>
 
 The comparisons above are mainly about data storage and management. It's worth noting that **special data** (or unstructured data) such as images, raw texts, and geospatial information are also **harder to analyze** (because most statistical and data analysis tools are designed for the structured data types) **and visualize** (although we do have a few specialized charts like word clouds). 
 
