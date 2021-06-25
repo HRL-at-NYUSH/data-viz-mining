@@ -49,6 +49,8 @@ Newspapers are a vital source to understand life in the past. Library of Congres
 
 Aside from the data sources, it is worth noting that textual descriptions that have many options can be seen as unstructured textual data. For example, there are about 40K different occupation descriptions in the Census dataset. This amount of potential values is hard for human to mentally keep track of. Thus, such data fields are closer to unstructured data instead of categorical.
 
+As a side note, NYPL has an [exploratory interface](http://archives.nypl.org/tools) for textual archive data. The ideas of "Visible Spectrum", "Mini Maps" as well as "Term Explorers" and "Collection as Network" are great inspirations for our data portal.
+
 <img src="./images/textual_data.png" alt="textual_data" width="700"/>
 
 <br>
@@ -75,7 +77,11 @@ There are also many other collections, many of these are discovered thanks to ou
 
 NYPL hosts many atlases of New York City. Here is a useful [map wrapper](http://maps.nypl.org/warper) page that allows searching and downloading of high-resolution, geo-rectified maps, although it is scheduled to be archived soon. 
 
+Many of the usefuls maps are called Sanborn maps, where Sanborn is the name of a fire insurance company. [This guide](https://www.loc.gov/rr/geogmap/sanborn/san4a1.html) from Library of Congress explains some background about Sanborn maps. 
+
 Alternative, NYPL Space-Time Directory project also have an [interactive map directory](http://spacetime.nypl.org/maps-by-decade). The project also feature many other [useful datasets and tools](http://spacetime.nypl.org).
+
+The [S4 Project](https://www.brown.edu/academics/spatial-structures-in-social-sciences/) at Brown University hosts city street datasets and maps. And USGS also has [a guide](https://www.usgs.gov/news/new-way-find-old-maps) on finding old maps. 
 
 In addition, there are many modern NYC GIS data sources that can be overlayed on the historical spatial datasets. NYC Department of City Planning has an [open data page](https://www1.nyc.gov/site/planning/data-maps/open-data.page). The websites [Zola Map](https://zola.planning.nyc.gov/data) and [Facilities Explorer](https://capitalplanning.nyc.gov/map) are two interactive interfaces for those datasets.
 
