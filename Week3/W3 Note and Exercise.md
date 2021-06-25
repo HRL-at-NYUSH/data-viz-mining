@@ -97,7 +97,7 @@ Textual data can be transformed into categorical and quantitative data. Take the
 
 When turning the textual data into numerical form that can be further analyzed, there are many approaches such as "bag of words" and "word embedding" (see the illustrations below). In the past year, members of the HRL have made progress with the Latent Dirichlet Allocation [LDA topic modeling](https://drive.google.com/drive/folders/1RDG4Vzpicj4FY2jIlKpiQGnaI4wbZIOq?usp=sharing). 
 
-There is also great demand in terms of fuzzy matching for the processing of textual data. Fuzzy matching can fix misspellings and word order variations, or even match semantically similar words. This is a very useful feature and much wanted in many data cleaning projects at HRL and other places. Here is a [list of academic papers](https://drive.google.com/drive/folders/1iUOz3_2Pfq2NeWwcpf_aggh0dPwwi3sJ?usp=sharing) I collected about fuzzy match and clustering.
+There is also great demand in terms of fuzzy matching for the processing of textual data. Fuzzy matching can fix misspellings and word order variations, or even match semantically similar words. This is a very useful feature and much wanted in many data cleaning projects at HRL and other places. Here is a [list of academic papers](https://drive.google.com/drive/folders/1iUOz3_2Pfq2NeWwcpf_aggh0dPwwi3sJ?usp=sharing) I collected about fuzzy match and clustering. This is a very meaningful, fundamental work.
 
 <img src="./images/textual_transform.png" alt="textual_tranform" width="700"/>
 
@@ -120,6 +120,8 @@ Spatial data is a unique one among special data since longitude and latitude inf
 ), [tutorial](https://methods.sagepub.com/dataset/geographically-weighted-regression-berlin-districts-2018-python), and [a paper](https://www.researchgate.net/publication/275137995_Spatial_heterogeneity_of_the_relationships_between_environmental_characteristics_and_active_commuting_Towards_a_locally_varying_social_ecological_model
 ) about GWR. Finally, spatial data has many **visualization**  opportunities, and not to mention, good maps are very visually appealing.
 
+Geocoding, which is the process of transforming a description of a location — such as an address — to a geolocation (often expressed in coordinates). Geocoding of addresses and place names is another widely needed and critically important piece of work. An accurate and robust historical addresss geocoding methodology can unlock the potential of any datasets that have address information, which include Census and Restaurant Database among others. I already have a geocoder prototype running but it definitely need upgrading and robustness testing. This is another very meaningful fundamental work.
+
 <img src="./images/spatial_transform.png" alt="spatial_tranform" width="700"/>
 
 
@@ -133,7 +135,7 @@ At HRL, we had made great efforts in the Optical Character Recognition (OCR) of 
 
 <img src="./images/ocr_process.png" alt="ocr_process" width="700"/>
 
-There is also very exciting work happening about map extraction. The goal is to combine OCR, NLP, and geospatial calculation to create geocoded data for city facilities of New York City in the history. For example, we can find out where are the schools in 1900s, what are the names and sizes of the schools, and ask is there a particular neighborhood lacking the education resources? We can do similar things for house of worships, hospitals and clinics, police and fire stations, etc. Essentially, we can create a historical version of the [facilities explorer](https://capitalplanning.nyc.gov/map) through map extraction. 
+There is also very exciting work happening about map extraction. The goal is to combine OCR, NLP, and geospatial calculation to create geocoded data for city facilities of New York City in the history. For example, we can find out where are the schools in 1900s, what are the names and sizes of the schools, and ask is there a particular neighborhood lacking the education resources? We can do similar things for house of worships, hospitals and clinics, police and fire stations, etc. Essentially, we can create a historical version of the [facilities explorer](https://capitalplanning.nyc.gov/map) through map extraction. Contact me for source data and more details if you are interested.
 
 <img src="./images/map_extraction.png" alt="map_extraction" width="700"/>
 
@@ -158,3 +160,17 @@ There is also very exciting work happening about map extraction. The goal is to 
 	5. To what extent do you need to / want to learn new skills to carry out this work
 
 > **Note:** Note that you don't have to stick to this idea for your individual project starting July. You can also propose an idea that might be above your current skill level but sounds very interesting to you. This exercise is meant to encourage you to think more about the rich possibilities with special data, and broaden your pool of choices before you decide on the topic of your mini-project. No formatting requirements for this one, but a basic Google Doc organized by the prompt questions is recommended. Please be prepared to ***share during the meeting next Tuesday***. 
+
+---
+<br><br><br>
+
+> **Image Credits:**
+> 
+> - [Voyager 2: Augmenting Visual Analysis with Partial View Specifications](https://vega.github.io/voyager2/)
+> - [Data Analysis in MySQL — Operators, Joins and More in Relational Databases](https://towardsdatascience.com/data-analysis-in-mysql-operators-joins-and-more-in-relational-databases-26c0a968e61e)
+> - [Structured Data Vs. Unstructured Data: What Are They And Why Care?](https://lawtomated.com/structured-data-vs-unstructured-data-what-are-they-and-why-care/)
+> - [Example of the bag-of-word text representation](https://www.researchgate.net/figure/Example-of-the-bag-of-word-text-representation-with-the-occurrence-of-word-as-feature_fig4_268050206)
+> - [Visualizing Words - Marcus Alder - Medium](https://medium.com/@marcusa314/visualizing-words-377624cb20c7)
+> 
+
+
