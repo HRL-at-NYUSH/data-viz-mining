@@ -135,7 +135,7 @@ At HRL, we had made great efforts in the Optical Character Recognition (OCR) of 
 
 <img src="./images/ocr_process.png" alt="ocr_process" width="700"/>
 
-There is also very exciting work happening about map extraction. The goal is to combine OCR, NLP, and geospatial calculation to create geocoded data for city facilities of New York City in the history. For example, we can find out where are the schools in 1900s, what are the names and sizes of the schools, and ask is there a particular neighborhood lacking the education resources? We can do similar things for house of worships, hospitals and clinics, police and fire stations, etc. Essentially, we can create a historical version of the [facilities explorer](https://capitalplanning.nyc.gov/map) through map extraction. Contact me for source data and more details if you are interested.
+There is another work happening about map extraction. The goal is to combine OCR, NLP, and geospatial calculation to create geocoded data for city facilities of New York City in the history. For example, we can find out where are the schools in 1900s, what are the names and sizes of the schools, and ask is there a particular neighborhood lacking the education resources? We can do similar things for house of worships, hospitals and clinics, police and fire stations, etc. Essentially, we can create a historical version of the [facilities explorer](https://capitalplanning.nyc.gov/map) through map extraction.
 
 <img src="./images/map_extraction.png" alt="map_extraction" width="700"/>
 
