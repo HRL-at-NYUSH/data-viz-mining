@@ -1,0 +1,671 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>CPSC 547: Information Visualization, Sep 2020</title>
+  </head>
+
+  <body>
+
+<center> <h2>CPSC 547: Information Visualization, Sep 2020</h2> 
+<b><font color=red>Remember to reload the page, changes are frequent</font></b>
+</center>
+<p>
+<p>
+<b>Instructor</b>: <a href="/~tmm">Tamara Munzner</a>
+<br>
+<b>First Class</b>: <font color="red"><b>Thu Sep 10 2020</b></font>
+<br>
+<b>Last Class</b>: Tue Dec 3 2020
+<br>
+<b>Time/Location</b>: Synchronous only on Thursdays 3:30-5 (Pacific
+time), by Zoom. <font color=red><b>(see Piazza for link)</b></font> 
+<br>
+<b>Office Hours</b>: Tuesdays 3:30-5, by Zoom. Or by appointment, check my <a href="https://www.cs.ubc.ca/~tmm/calendar.html">calendar</a> and request a spot by email. 
+<br>
+<b>UBC Cal Page</b>:
+<a href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=CPSC&course=547">CPSC 547</a>
+<br>
+<b>Canvas Page</b>: <a href="https://canvas.ubc.ca/courses/61963">547 Canvas Page</a>
+<br>
+<b>Piazza Page</b>: <a href="https://piazza.com/class/kerj12q9g1w6z5">547 Piazza</a> (<a href="https://piazza.com/ubc.ca/winterterm12020/cpsc5471012020w">signup link</a>) Please join Piazza, it's the main avenue of communication for this course! 
+
+<hr>
+<center><i>This page</i>:
+<a href="#today"><b>Jump to Current Day</b></a>  |  
+<a href="#shortsyl">Short Syllabus</a> |
+<a href="#longsyl">Detailed Syllabus</a> |
+<a href="#prev">Previous Versions</a> 
+<br>
+<i>Other pages</i>:
+<a href="projects.html">Projects</a> |
+<a href="structure.html">Course Structure</a> | 
+<a href="projectdesc.html">Project Description</a> |
+<a href="video.html">Video Production</a> |
+<a href="tools">Tools</a> |
+<a href="http://www.cs.ubc.ca/group/infovis/resources.shtml">Resources</a> 
+</center>
+<hr>
+<p>
+<a name="shortsyl">
+<center><h2>Short Weekly Syllabus</h2></center>
+<h4>
+<center>
+<table border=1>
+<tr>
+<td><h4>&nbsp;&nbsp;Week&nbsp;&nbsp;</h4></td>
+<td><h4>&nbsp;&nbsp;Date&nbsp;&nbsp;</h4></td>
+<td><h4>&nbsp;&nbsp;Async Read/Discuss &nbsp;&nbsp;</h4></td>
+<td><h4>&nbsp;&nbsp;Sync: In Class&nbsp;&nbsp;</h4></td>
+<td><h4>&nbsp;&nbsp;Due &nbsp;&nbsp;</h4></td>
+</tr>
+<tr><td align=center> &nbsp; 1  &nbsp; </td> <td> &nbsp; Sep 10</td>
+<td><a href="#intro">Intro, Course Logistics</a></td>
+<td><i><a href="https://drive.google.com/drive/folders/1PuLlHXzImV_k7UOTlGLK-5ZFaw8OkUqE">Ex: Time Series</a></i></td>
+<td></td></tr>
+
+<tr><td align=center> &nbsp; 2  &nbsp; </td> <td> &nbsp; Sep 17</td>
+<td><a href="#data">Data, Tasks, Nested Model</a></td>
+<td><i><a href="https://drive.google.com/drive/folders/1RVwf7tSLRrvz5p4cLB7vAjij5J_axLXL?usp=sharing">Ex: Abstractions</a></i></td>
+<td></td></tr>
+
+<tr><td align=center> &nbsp; 3  &nbsp; </td> <td> &nbsp; Sep 24</td>
+<td><a href="#markschannels">Marks & Channels, Rules of Thumb, DSM</a></td>
+<td><i><a href="https://drive.google.com/drive/folders/1JBdeJKY08_IxOOMZEqs075blXD9xedrW">Ex: Decoding</a></i> </td>
+<td></td></tr>
+
+<tr><td align=center> &nbsp; 4  &nbsp; </td> <td> &nbsp; Oct 1</td>
+<td><a href="#tables">Tables, LineUp, Bertifier</a></td>
+<td><b><a href="#ex:pitches"><font color="red"><a href="pitches.html">Pitches</a></font></a></b></td>
+<td><b>Pitches</b> due Thu Oct 1 noon</td></tr> 
+
+<tr><td align=center> &nbsp; 5  &nbsp; </td> <td> &nbsp; Oct 8</td>
+<td><a href="#color">Color, ArteryViz, RainbowsRevisited</a></td>
+<td><i>Ex: <a href="https://drive.google.com/drive/folders/1di4oxNYZ7GQHBZzip9AOCUxK7mNTL5AX">2N/CP</a></i></td>
+<td><b>Groups</b> finalized Fri Oct 9 noon</td></tr>
+
+<tr><td align=center> &nbsp; 6  &nbsp; </td> <td> &nbsp; Oct 15</td>
+<td><a href="#networks">Networks, Abyss-Explorer, Geneaology</a></td>
+<td><b><a href="#ex:meet1"><font color="red">Pre-Proposal Meetings</font></a></b></td>
+<td></td></tr>
+
+<tr><td align=center> &nbsp; 7  &nbsp; </td> <td> &nbsp; Oct 22</td>
+<td><a href="#spatial">Spatial Data, NecklaceMaps, Myriahedral</a></td>
+<td><i>Ex: <a href="https://drive.google.com/drive/folders/1IvimRwQD3yHRgQtf91FEPzsbSie5aVoT">Ballotmaps</a></i></td>
+<td><b>Proposals</b> due Fri Oct 23 noon</td></tr>
+
+<tr><td align=center> &nbsp; 8  &nbsp; </td> 
+<td> &nbsp; Oct 29</td>
+<td><a href="#paper:d3">D3, Tableau, R/Tidyverse</a></td>
+<td><b>NO CLASS</b></td>
+<td></td></tr>
+
+<tr><td align=center> &nbsp; 9  &nbsp; </td> <td> &nbsp; Nov 5</td> 
+<td><a href="#facet">Manipulate, Facet, Paramorama</a></td>
+<td><i><a
+  href="https://drive.google.com/drive/folders/1hzFln-IpA5NjkuV4Y99K3Anww6EDqkzM">Ex:
+  3 Complexity Fams</i></td>
+<td></td></tr>
+
+<tr><td align=center> &nbsp; 10  &nbsp; </td> <td> &nbsp; Nov 12</td> 
+<td><a href="#reduce">Reduce, Embed, TensorFlowGraph</a></td>
+<td><i>Livestream: Case Studies & Reproducibility</i></td>
+<td></td></tr>
+
+<tr><td align=center> &nbsp; 11 &nbsp; </td> <td> &nbsp; Nov 19</td>
+<td><a href="#peer">(Project Updates)</td>
+<td><b><a href="#peer1"><font color="red"><a href="https://drive.google.com/drive/folders/1ib2YIwt3Q2JYKjgeTDQ5L0Mnjcy27vaz?usp=sharing">Project Peer Reviews</a></font></a></b></td>
+<td><b>Updates</b> due <b>Wed Nov 18</b> 3pm</td></tr>
+
+<tr><td align=center> &nbsp; 12  &nbsp; </td> <td> &nbsp; Nov 26</td>
+<td></td>
+<td><b><a href="#ex:meet2"><font color="red">Post-Update Meetings</font></a></b></td>
+<td></td></tr>
+
+<tr><td align=center> &nbsp; 13  &nbsp; </td> <td> &nbsp; Dec 3</td>
+<td></td>
+<td>Livestream: <a href="#researchpapers">Research Process</a></td>
+<td></td></tr>
+
+<tr><td align=center> &nbsp; 14  &nbsp; </td> <td> &nbsp; Dec 10</td>
+<td></td>
+<td><b><font color="red">Final Presentations</font></b> 3-6:30pm</td>
+<td><b>Final Papers</b> due Mon Dec 14 8pm</td></tr>
+</table>
+</center>
+</h4>
+<p>
+<hr>
+
+
+<a name="longsyl">
+<center><h2>Detailed Syllabus</h2></center> 
+<p>
+Syllabus tentative, final changes will be made by previous class (for readings). In weeks with required readings, your comments are due by Tue 3:30 and your responses are due by Thu 3:30. 
+<p>
+
+<b>Required Reading:</b>
+<p>
+
+<a href="/~tmm/vadbook">Visualization Analysis and Design</a>, Tamara
+Munzner (A K Peters Visualization Series, CRC Press, 2014) is the course
+textbook.
+<p>
+The UBC library has multiple ebook licenses so you can read it for free: <a
+href="http://resolve.library.ubc.ca/cgi-bin/catsearch?bid=7678980">library
+catalog page</a>, <a href="http://ezproxy.library.ubc.ca/login?url=http://www.crcnetbase.com/isbn/9781466508934">EZProxy
+direct link</a>. 
+<p>
+To buy your own copy online, it's currently around US$80 new from <a
+href="http://www.amazon.com/Visualization-Analysis-Design-AK-Peters/dp/1466508914">amazon.com</a>
+and on sale for US$70 from <a
+href="https://www.crcpress.com/Visualization-Analysis-and-Design/Munzner/9781466508910">CRC</a>
+CD$116 from <a
+href="http://www.amazon.ca/Visualization-Analysis-Design-AK-Peters/dp/1466508914">amazon.ca</a>
+If you buy the hardcover book, you'll get the ebook version for free; you
+can also buy an ebook-only for less, or rent the ebook for even less. 
+
+<p>
+All additional readings are research papers available online for free, links posted below.
+For digital library access from off-campus, use 
+<a href="http://www.library.ubc.ca/home/proxyinfo/">EZproxy</a> with your CWL login through the UBC library.
+<br><b>EZproxy direct links:</b>
+<a href="http://ezproxy.library.ubc.ca/login?url=http://ieeexplore.ieee.org/Xplore/DynWel.jsp">IEEE DL</a>, 
+<a href="http://ezproxy.library.ubc.ca/login?url=http://link.springer-ny.com/search.htm">Springer DL</a>,
+<a href="http://ezproxy.library.ubc.ca/login?url=http://portal.acm.org/dl.cfm">ACM DL</a>,
+<a href="http://ezproxy.library.ubc.ca/login?url=http://www.jstor.org/">JSTOR</a>
+
+<p>
+<a name="chap1">
+<a name="intro">
+<hr>
+<b>Introduction</b> Week 1: Thu Sep 10
+ <p>
+<i>Required Reading</i>
+<ul>
+  <li>VAD Chapter 1. What's Vis, and Why Do It?</li>
+  <li>Course Logistics
+  <ul>
+	<li><a href="https://www.cs.ubc.ca/~tmm/courses/547-20/">main/syllabus</a> (this page!) 
+	<li><a href="https://www.cs.ubc.ca/~tmm/courses/547-20/structure.html">course structure</a> 
+	<li><a href="https://www.cs.ubc.ca/~tmm/courses/547-19/projectdesc.html">project structure</a>
+  </ul>
+</ul>
+
+<p>
+<i>Slides:</i> 
+ <a href="slides/intro.pdf">pdf</a>,
+ <a href="slides/intro-4x4.pdf">pdf 16up</a>,
+ <a href="slides/intro.key">keynote</a>
+<p>
+
+<p>
+<i> Online Discussion: </i> (see Piazza, <a href="https://piazza.com/class/kerj12q9g1w6z5?cid=8">post @8</a>)
+
+<p>
+<i>In Class Exercise:</i> <a href="https://drive.google.com/drive/folders/1PuLlHXzImV_k7UOTlGLK-5ZFaw8OkUqE">Time Series</a>
+
+<p><i>Videos:</i> <a href="videos/course_pitch_infovis.mp4">Course Pitch</a> (5 min) 
+
+<p>
+<i>Further Reading</i>
+<ul>
+  <li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch1whydoit">Ch 1 (Why Do It?) Further Reading</a></li>
+  <li> In-Class Exercise Followup Videos & Papers
+  <ul>
+	<li>Cluster-Calendar <a href="http://www.win.tue.nl/%7Evanwijk/clv.pdf">paper</a></li>
+	<li>Stack Zooming <a href="https://youtu.be/dK0De4XPm5Y">video</a>, <a href="https://engineering.purdue.edu/%7Eelm/projects/stackzoom/stackzoom.pdf">paper</a></li>
+	<li>ChronoLenses <a href="https://youtu.be/k7pI8ikczqk">video</a>, <a href="http://www.cs.toronto.edu/%7Ejianzhao/papers/chronolens.pdf">paper</a></li>
+	<li>RankExplorer <a href="https://youtu.be/rdgn1qcZ2A4">video</a>, <a href="http://research.microsoft.com/en-us/um/people/weiweicu/images/ranker.pdf">paper</a></li>
+	<li>LiveRAC <a href="http://youtu.be/ld0c3H0VSkw">video</a>, <a href="http://www.cs.ubc.ca/labs/imager/tr/2008/liverac/">paper</a></li>
+  </ul>
+  <li> <a href="https://scholarstrikecanada.ca/">Scholar Strike</a> Resources and Readings
+  <ul>
+	<li><a href="https://blacklivesmatter.com/">Black Lives Matter</a>
+	<li><a href="https://www.datavisualizationsociety.com">Data Visualization Society</a> & <a href="https://medium.com/nightingale">Nightingale</a> Journal on Medium
+	<ul>
+	  <li><a href="https://www.datavisualizationsociety.com/resources">Resources</a>, including Data Sources for Analysis of Racial Bias
+	  <li><a href="https://medium.com/nightingale/w-e-b-du-bois-staggering-data-visualizations-are-as-powerful-today-as-they-were- in-1900-64752c472ae4">6-part article series on pioneering work of W.E.B. duBois</a>
+	</ul>
+	<li><a href="https://datafeminism.io/">Data Feminism</a> book by Catherine D'Ignazio and Naomi Klein
+	<ul><li>data science and data ethics, informed by intersectional feminism</ul>
+	<li> <a href="https://dfp.ubc.ca">Designing for People</a> initiative recent events (videos coming soon)
+	<ul><li><a href="https://dfp.ubc.ca/news-and-events/events/three-lessons-towards-ethical-tech-research-ethics-ethics-education-and">Three Lessons Towards Ethical Tech: Research Ethics, Ethics Education, and Broadening Participation in Computing</a> seminar yesterday from Casey Fiesler
+	  <li> <a href="https://dfp.ubc.ca/news-and-events/events/edi-workshop">Equity, Diversity, and Inclusion</a> workshops
+	</ul>
+  </ul>
+</ul>
+
+<a name="data">
+<a name="tasks">
+<a name="validation">
+<a name="ex:abstr">
+<hr>
+<b>Data, Tasks, Nested Model</b> Week 2: Thu Sep 17
+
+<p>
+<i>Required Reading</i> 
+<ul>
+  <li>VAD Chapter 2. What: Data Abstraction</li>
+  <li>VAD Chapter 3. Why: Task Abstraction</li>
+  <li> paper <a href="https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/">A Nested Model for Visualization Design and Validation.</a> Tamara Munzner. IEEE TVCG (Proc. InfoVis 2009) 15(6):921-928, 2009.</li> <b>[type: model]</b>
+</ul>
+
+<p>
+<i>Online Discussion: </i> Piazza posts <a href="https://piazza.com/class/kerj12q9g1w6z5?cid=13">@13</a>,
+  <a href="https://piazza.com/class/kerj12q9g1w6z5?cid=14">@14</a>, 
+  <a href="https://piazza.com/class/kerj12q9g1w6z5?cid=15">@15</a>
+<p>
+
+<i>In Class Exercise:</i> <a href="https://drive.google.com/drive/folders/1RVwf7tSLRrvz5p4cLB7vAjij5J_axLXL?usp=sharing">Abstractions</a>
+(source: <a href="http://enrico.bertini.io/teaching/">Bertini</a>)
+
+<p>
+<i>Further Reading</i>
+<ul>
+<li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch2data">Ch 2 (Data Abstraction) Further Reading</a>
+<li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch3tasks">Ch 3 (Task Abstraction) Further Reading</a>
+</ul>
+
+
+<a name="markschannels">
+<a name="rulesthumb">
+<a name="paper:dsm">
+<a name="ex:decoding">
+<hr>
+<b>Marks & Channels, Rules of Thumb, Design Study Methodology</b> Week 3: Thu Sep 24
+
+<p>
+<i>Required Reading</i> 
+<ul>
+  <li>VAD Chapter 5. Marks and Channels
+  <li>VAD Chapter 6. Rules of Thumb
+  <li>paper <a href="http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/">Design Study Methodology: Reflections from the Trenches and the Stacks.</a>
+    Michael Sedlmair, Miriah Meyer, and Tamara Munzner.
+    IEEE Trans. Visualization and Computer Graphics (Proc. InfoVis
+	2012), 18(12):2431-2440, 2012. <b>[type: model]</b>
+</ul>
+<p>
+<i>Slides:</i> 
+ <a href="slides/marks.pdf">pdf</a>,
+ <a href="slides/marks-4x4.pdf">pdf 16up</a>,
+ <a href="slides/marks.key">keynote</a>
+<p>
+
+<p><i>Online Discussion: </i> Piazza posts 
+  <a href="https://piazza.com/class/kerj12q9g1w6z5?cid=22">@22</a>,
+  <a href="https://piazza.com/class/kerj12q9g1w6z5?cid=23">@23</a>,
+  <a href="https://piazza.com/class/kerj12q9g1w6z5?cid=24">@24</a>
+<p>
+<i>In Class Exercise:</i> <a href="https://drive.google.com/drive/folders/1JBdeJKY08_IxOOMZEqs075blXD9xedrW">Decoding</a>
+(source: <a href="http://enrico.bertini.io/teaching/">Bertini</a>)
+
+<p>
+<i>Further Reading</i>
+<ul>
+<li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch5marks">Ch 5 (Marks & Channels) Further Reading</a>
+<li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch6rules">Ch 6 (Rules of Thumb) Further Reading</a>
+<li> <a href="http://www.cs.ubc.ca/labs/imager/tr/2008/pitfalls/#update">pointers to many design studies</a>
+</ul>
+
+<a name="tables">
+<a name="ex:pitches">
+<hr>
+<b>Tables, LineUp, Bertin Matrices Revisited</b> Week 4: Thu Oct 1
+
+<p>
+<i>Required Reading</i> 
+<ul>
+  <li>VAD Chapter 7. Arrange Tables
+  <li>paper <a href="https://caleydo.org/publications/2013_infovis_lineup/">LineUp: Visual Analysis of Multi-Attribute Rankings.</a> Samuel Gratzl, Alexander Lex, Nils Gehlenborg, Hanspeter Pfister, Marc Streit. IEEE Trans. Visualization and Computer Graphics (Proc. InfoVis 2013), 19(12):2277-2286, 2013. <b>[type: technique]</b>
+ <li> paper <a href="https://aviz.fr/wiki/uploads/Bertifier/bertifier-authorversion.pdf">Revisiting Bertin Matrices: New Interactions for Crafting Tabular
+  Visualizations.</a> Charles Perin, Pierre Dragicevic, Jean-Daniel
+  Fekete. IEEE Trans. Visualization and Computer Graphics (Proc.
+  InfoVis 2014), 20(12):2082-2091, 2014. <b>[type: technique]</b>
+</ul>
+
+<i>Online Discussion: </i> Piazza 
+  <a href="https://piazza.com/class/kerj12q9g1w6z5?cid=28">@28</a>,
+  <a href="https://piazza.com/class/kerj12q9g1w6z5?cid=29">@29</a>,
+  <a href="https://piazza.com/class/kerj12q9g1w6z5?cid=30">@30</a>
+
+<p>
+<i>In Class</i>: <a href="pitches.html">Project Pitches</a>
+
+<p>
+<i>Further Reading</i>
+<ul>
+  <li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch7tables">Ch 7 (Table Data) Further Reading</a>
+</ul>
+
+<a name="color">
+<a name="paper:arteryviz">
+<hr>
+<b>Color, ArteryViz, RainbowsRevisited</b> Week 5: Thu Oct 8
+<p>
+<i>Required Reading</i> 
+<ul>
+  <li>VAD Chapter 10. Map Color and Other Channels
+  <li>paper <a href="https://vcg.seas.harvard.edu/publications/evaluation-of-artery-visualizations-for-heart-disease-diagnosis">Evaluation of Artery Visualizations for Heart Disease Diagnosis.</a> Michelle A. Borkin, Krzysztof Z. Gajos, Amanda Peters, Dimitrios Mitsouras, Simone Melchionna, Frank J. Rybicki, Charles L. Feldman, and Hanspeter Pfister. IEEE TVCG (Proc. InfoVis 2011), 17(12):2479-2488, 2011. <b>[type: empirical / design study]</b>
+  <li> paper <a href="https://osf.io/avwrs/download">Rainbows Revisited: Modeling Effective Colormap Design for Graphical Inference.</a>
+Khairi Reda and Danielle Albers Szafir. IEEE TVCG (Proc. InfoVis 2020), to appear. <b>[type: empirical]</b>
+</ul>
+<i>Online Discussion: </i> Piazza 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=43">@43</a>,
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=44">@44</a>,
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=45">@45</a>
+<p>
+<i>Slides:</i> 
+ <a href="slides/week5.pdf">pdf</a>,
+ <a href="slides/week5-4x4.pdf">pdf 16up</a>,
+ <a href="slides/week5.key">keynote</a>
+<p>
+<i>In Class Exercise: <a href="https://drive.google.com/drive/folders/1di4oxNYZ7GQHBZzip9AOCUxK7mNTL5AX">2Nums; Color</a></i>
+(source: Pfister/Lex/Ortiz; Rheingans)
+
+<p>
+<i>Further Reading</i>
+<ul>
+  <li> <a
+  href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch10color">Ch
+  10 (Color) Further Reading</a>
+  <li><a href="https://en.rockcontent.com/blog/45-ways-to-communicate-two-quantities/">Santiago Ortiz, 45 Ways to Communicate Two Quantities</a>
+  <li><a href="https://www.visualcinnamon.com/2020/04/designing-the-hubble-skymap">Nadieh Bremer, A sky map of the Hubble Space Telescope's observations</a> (detailed design walkthrough, includes substantial discussion of color palettes)
+</ul>
+
+<p>
+<a name="network">
+<a name="paper:abyss">
+<a name="paper:geneaology">
+<a name="ex:meet1">
+<hr>
+<b>Networks, Abyss-Explorer, Geneaology</b> Week 6: Thu Oct 15
+
+<p>
+<i>Required Reading</i> 
+<ul>
+  <li><a href="https://www.cs.ubc.ca/~tmm/courses/547-20/tools/">Tools guidance</a>
+
+  <li>VAD Chapter 9. Arrange Networks
+  <li>paper <a
+	  href="http://www.cydney.org/Publications_files/Nielsen_infovis_2009.pdf">ABySS-Explorer:
+	  visualizing genome sequence assemblies.</a>. Cydney B. Nielsen,
+	  Shaun D. Jackman, Inanc Birol, Steven J.M. Jones. TVCG 15(6):881-8, 2009 (Proc. InfoVis 2009). <b>[type:
+	  design study]</b>
+  <li>paper <a
+ href="http://www.dgp.toronto.edu/~mjmcguff/research/#mcguffin_infovis2005">Interactive
+ Visualization of Genealogical Graphs</a>. Michael J. McGuffin, Ravin
+	 Balakrishnan. Proc. InfoVis 2005, pp 17-24. <b>[type: technique]</b>
+	 <ul>
+	  <li><a
+		  href="http://www.youtube.com/watch?v=-FkRzDegzAo">video</a>
+	</ul>
+</ul>
+<i>Online Discussion: </i>
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=51">@51</a>, 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=52">@52</a>, 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=53">@53</a>
+
+<p>
+<i>In Class</i>: Project Groups Meet with Tamara 
+
+<p>
+<i>Further Reading</i> 
+<ul>
+<li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch9networks">Ch 9 (Network Data) Further Reading</a>
+</ul>
+
+
+<p>
+<a name="spatial">
+<hr>
+<b>Spatial Data, NecklaceMaps, Myriahedral </b> Week 7: Thu Oct 22
+<p>
+<i>Required Reading</i> 
+<ul>
+  <li>VAD Chapter 8. Arrange Spatial Data
+  <li>paper <a href="https://www.win.tue.nl/~speckman/papers/NecklaceMapsFinal.pdf">Necklace
+  Maps</a>. Bettina Speckmann and Kevin Verbeek. IEEE TVCG (Proc. InfoVis 2010) 16(6):881-889. <b>[type: algorithm]</b>
+  <li>paper <a
+  href="https://www.win.tue.nl/~vanwijk/myriahedral/CAJ103.pdf">Unfolding
+  the Earth: Myriahedral Projections</a>. Jarke J. van Wijk. The
+  Cartographic Journal, 45(1):32-42, 2008. <b>[type: algorithm]</b>
+  <ul>
+	<li><a href="https://www.win.tue.nl/~vanwijk/myriahedral/myria.avi">Video</a></li>
+	<li><a href="https://philogb.github.io/page/myriahedral/">Demo</a></li>
+  </ul>
+</ul>
+
+<i>Online Discussion: </i> Piazza
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=62">@62</a>, 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=63">@63</a>, 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=64">@64</a>
+
+<p>
+<i>In Class Exercise:</i>
+<a href="https://drive.google.com/drive/folders/1IvimRwQD3yHRgQtf91FEPzsbSie5aVoT">Ballotmaps</a>
+<br> <b>Followup reading:</b> 
+<a
+href="http://openaccess.city.ac.uk/436/1/wood_ballotmaps_2011.pdf">BallotMaps:
+Detecting name bias in alphabetically ordered ballot papers.</a> Wood,
+J., Badawood, D., Dykes, J. & Slingsby, A. (2011). IEEE
+Transactions on Visualization and Computer Graphics, 17(12), pp.
+2384-2391.
+
+<p>
+<i>Further Readings</i> 
+<ul>
+  <li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch8spatial">Ch 8 (Spatial Data) Further Reading</a>
+</ul>
+
+
+
+<p>
+<a name="paper:d3">
+<hr>
+<b>D3, Tableau, R/Tidyverse </b> Week 8: Thu Oct 29
+
+<p>
+<i>Required Reading</i> 
+<ul>
+  <li>paper <a href="http://vis.stanford.edu/papers/d3">D3: Data-Driven
+  Documents</a>. Michael Bostock, Vadim Ogievetsky, Jeffrey Heer. IEEE
+  Trans. Visualization & Comp. Graphics (Proc. InfoVis), 2011. <b>[type: system]</b>
+  <li>paper <a href="https://graphics.stanford.edu/papers/polaris/polaris.pdf">Polaris: A System for Query, Analysis and Visualization of Multi-dimensional Relational Databases.</a>
+  Chris Stolte and Pat Hanrahan. Proc. InfoVis 2000. <b>[type: system]</b>
+  <li> paper <a href="http://diytranscriptomics.com/Reading/files/layered-grammar.pdf">A layered grammar of graphics</a>. Hadley Wickham. Journal of Computational and Graphical Statistics 19(1):3-28, 2010. <b>[type: system/model]</b>
+</ul>
+<i>Online Discussion: </i> Piazza
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=71">@71</a>, 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=72">@72</a>, 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=73">@73</a>
+
+<p>
+<i>In Class</i>: <b>NO SYNC CLASS</b>
+
+<p>
+<i>Further Reading</i>
+<ul>
+  <li> D3
+  <ul>
+	<li><a href="https://d3js.org/">D3.js</a> A powerful JavaScript library for manipulating documents based on data
+	<li><a href="http://alignedleft.com/work/d3-book-2e">Interactive Data Visualization for the Web - An Introduction to Designing with D3</a> by Scott Murray (2nd edition, D3 v4)
+	<li><a href="http://uwdata.github.io/d3-tutorials/fundamental.html#/">Technology fundamentals for D3.js</a> (Slides by K. Wongsuphasawat, J. Hoffswell, D. Moritz)
+	<li><a href="https://square.github.io/intro-to-d3/">Intro to D3</a></li>
+	<li> See the <a href="http://www.cs.ubc.ca/group/infovis/cs547-resources.shtml">resource page</a> for a longer discussion of readings for D3 (and a few other tools as well). You should use this week without a synchronous class meeting to put some time into exploring options for what coding infrastructure to use.</li>
+  </ul>
+</ul>
+
+<p>
+<a name="interact">
+<a name="facet">
+<a name="paper:paramorama">
+<hr>
+<b>Manipulate, Facet, Paramorama </b> Week 9: Thu Nov 5
+
+<p>
+<i>Required Reading</i> 
+<ul>
+  <li>VAD Chapter 11. Manipulate View
+  <li>VAD Chapter 12. Facet into Multiple Views
+  <li>paper <a
+	  href="http://doi.ieeecomputersociety.org/10.1109/TVCG.2011.253">Visualization
+	  of Parameter Space for Image Analysis</a>. A. Johannes
+	  Pretorius, Roy A. Ruddle, Mark-Anthony Bray, Anne E. Carpenter.
+	  TVCG 12(17):2402-2411 2011 (Proc. InfoVis 2011). <b>[type:
+	  design study]</b>
+</ul>
+<i>Online Discussion: </i> Piazza
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=79">@77</a>, 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=79">@78</a>, 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=79">@79</a>
+
+<p>
+<i>In Class</i>: <a
+href="https://drive.google.com/drive/folders/1hzFln-IpA5NjkuV4Y99K3Anww6EDqkzM">Three
+Complexity Families</a>
+
+<p>
+<i>Further Readings</i> 
+<ul>
+  <li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch11manipulate">Ch 11 (Manipulate) Further Reading</a>
+  <li> <a
+	href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch12views">Ch 12 (Multiple Views) Further Reading</a>
+</ul>
+
+<p>
+<a name="reduce">
+<a name="embed">
+<hr>
+<b>Reduce, Embed, TensorFlowGraph </b> Week 10: Thu Nov 12
+
+<p>
+<i>Required Reading</i> 
+<ul>
+  <li>VAD Chapter 13. Reduce Items and Attributes
+  <li>VAD Chapter 14. Embed: Focus+Context
+  <li>paper <a href="https://idl.cs.washington.edu/files/2018-TensorFlowGraph-VAST.pdf">Visualizing Dataflow Graphs of Deep Learning Models in TensorFlow</a>. Kanit Wongsuphasawat, Daniel Smilkov, James Wexler, Jimbo Wilson, Dandelion Man&eacute;, Doug Fritz, Dilip Krishnan, Fernanda B. Vi&eacute;gas, and Martin Wattenberg. IEEE TVCG (Proc. VAST 2017) 24(1):1-12, 2018. <b>[type: design study]</b>
+</ul>
+<i>Online Discussion: </i> Piazza
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=87">@87</a>, 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=88">@88</a>, 
+<a href="https://piazza.com/class/kerj12q9g1w6z5?cid=89">@89</a>
+
+<p>
+<i>Slides:</i> 
+ <a href="slides/week10.pdf">pdf</a>,
+ <a href="slides/week10-4x4.pdf">pdf 16up</a>,
+ <a href="slides/week10.key">keynote</a>
+
+<p>
+<i>Further Readings</i> 
+<ul>
+  <li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch13reduce">Ch 13 (Reduce) Further Reading</a>
+  <li> <a href="http://www.cs.ubc.ca/~tmm/vadbook/furtherreading.html#ch14embed">Ch 14 (Embed) Further Reading</a>
+  <li> <a href="http://dx.doi.org/10.1109/TVCG.2009.152">Interactive Coordinated Multiple-View Visualization of Biomechanical
+	Motion Data.</a> Daniel F. Keefe, Marcus Ewert, William Ribarsky, Remco Chang. IEEE Trans. Visualization and Computer Graphics (Proc. Vis 2009), 15(6):1383-1390, 2009.
+  <li> <a href="http://algebraicvis.net/">An Algebraic
+	Process for Visualization Design.</a> Carlos Scheidegger and
+		Gordon Kindlmann. IEEE TVCG (Proc. InfoVis 2014),
+  20(12):2181-2190. <a href="http://algebraicvis.net/2014/11/11/a_primer.html">helpful blog post</a>
+  <li><a href="https://infoscience.epfl.ch/record/136640/files/VandewalleKV09.pdf">Reproducible Research in Signal Processing - What, why, and how</a>.
+Patrick Vandewalle, Jelena Kovacevic and Martin Vetterli. IEEE Signal Processing Magazine, 26(3):37-47, May 2009.
+<li> <a
+	href="http://andrewgelman.com/2016/09/21/what-has-happened-down-here-is-the-winds-have-changed/">What
+	Has Happened Down Here Is The Winds Have Changed</a>, Andrew
+	Gelman; Statistical Modeling, Causal Inference, and Social science
+	blog. 
+<li><a href="http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf">The garden of forking paths: Why multiple comparisons can be a problem,
+even when there is no “fishing expedition” or “p-hacking” and the research
+hypothesis was posited ahead of time</a>, Andrew Gelman and Eric Loken
+  
+  <li><a href="http://www.econ.queensu.ca/files/other/storks.pdf">Storks Deliver Babies (p= 0.008)</a>. Robert Matthews. Teaching Statistics 22(2):36-38, 2000. <a href="http://dx.doi.org/10.1111/1467-9639.00013">DOI</a>
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.125.348&rep=rep1&type=pdf">The Earth is spherical (p < 0.05): alternative methods of statistical inference</a>. Kim J. Vicente and Gerard L. Torenvliet.
+Theoretical Issues in Ergonomics Science, 1(3):248-271, 2000. 
+<li><a href="http://people.psych.cornell.edu/~jec7/pcd%20pubs/simmonsetal11.pdf">False-Positive Psychology: Undisclosed
+    Flexibility in Data Collection and Analysis Allows Presenting
+    Anything
+    as Significant</a>. Joseph P. Simmons, Leif D. Nelson and Uri
+    Simonsohn. Psychological Science 22(11):1359-1366, 2011.
+	  <li><a href="http://www.cs.utah.edu/~gk/papers/vis03/">Curvature-Based
+		  Transfer Functions for Direct Volume Rendering: Methods and
+		  Applications.</a>. Gordon Kindlmann, Ross Whitaker, Tolga
+		  Tasdizen, and Torsten M&ouml;ller. IEEE Visualization 2003. 
+<li><a
+	href="http://robotics.cs.tamu.edu/RSS2015NegativeResults/pmed.0020124.pdf">Why
+	most published research findings are false.</a>. JPA Ioannidis,
+	PLoS Med 2(8): e124, 2005.
+<li> <a href="http://sometimesimwrong.typepad.com/wrong/scientific-integrity/">Sometimes I'm Wrong blog</a>, Simine Vazier, Scientific Integrity category
+<li> <a href="http://datacolada.org/53/">What I Want Our Field to
+	Prioritize</a>, Joe Simmons, Data Colada blog. 
+<li><a href="https://osf.io/9kpmb">example pre-registration</a> for Vis paper The Impact of Extrinsic Means and Uncertainty Encodings on Judgments and Decisions about Effect Size
+</ul>
+
+<p>
+<a name="peer1">
+<hr>
+<b>Updates: Peer Review </b> Week 11: Thu Nov 19
+
+<p>
+<i>In Class</i>: <a href="https://drive.google.com/drive/folders/1ib2YIwt3Q2JYKjgeTDQ5L0Mnjcy27vaz?usp=sharing">Peer Review</a>
+
+<p>
+<a name="postupdate-meet">
+<hr>
+<b>Post-Update Meetings </b> Week 12: Thu Nov 26
+
+<p>
+<i>In Class</i>: Post-Update Groups Meet with Tamara
+
+<p>
+<a name="researchpapers">
+<hr>
+<b>Paper Writing and Research Process </b> Week 13: Thu Dec 3
+
+<p>
+<i>In Class</i>: Live Zoom Lecture, Q&A. <a href="https://canvas.ubc.ca/courses/30777/external_tools/6073">Evals</a>
+<p>
+<i>Slides:</i> 
+ <a href="slides/week13.pdf">pdf</a>,
+ <a href="slides/week13-4x4.pdf">pdf 16up</a>,
+ <a href="slides/week13.key">keynote</a>
+
+
+<hr>
+<a name="final">
+<b><a href="projects.html">Final Project Presentations</a></b> Thu Dec 10 3-6:30pm
+
+<p>
+<hr>
+<b><a href="projectdesc.html">Final Papers</a> Due</a></b> Mon Dec 14 8pm
+<p>
+<hr>
+
+<a name="prev"> <center><h2>Previous Versions</h2></center> <ul>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/547-19/">Information Visualization, Fall 2019</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/547-17F/">Information Visualization, Fall 2017</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/547-17/">Information Visualization, Spring 2017</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/547-15/">Information Visualization, Fall 2015</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/547-14/">Information Visualization, Fall 2014</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/533-11/">Information Visualization, Fall 2011</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/533-09/">Information Visualization, Fall 2009</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/cpsc533c-07-fall/">Information Visualization, Fall 2007</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/cpsc533c-06-fall/">Information Visualization, Fall 2006</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/cpsc533c-05-fall/">Information Visualization, Fall 2005</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/cpsc533c-04-fall/">Information Visualization, Fall 2004</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/cpsc533c-04-spr/">Information Visualization, Spring 2004</a>
+  <li><a href="http://www.cs.ubc.ca/~tmm/courses/cpsc533c-03-spr/">Information Visualization, Spring 2003</a>
+</ul>
+
+
+<hr>
+Permanent URL of this page is <a href="http://www.cs.ubc.ca/~tmm/courses/547-20/">http://www.cs.ubc.ca/~tmm/courses/547-20</a>
+    <hr>
+    <address><a href="http://www.cs.ubc.ca/~tmm">Tamara Munzner</a></address>
+<!-- Created: Thu Aug 28 16:17:20 PDT 2003-->
+<!-- hhmts start --> Last modified: Tue Jan 12 00:39:59 PST 2021 <!-- hhmts end -->
+  </body>
+</html>
+
+
+
+

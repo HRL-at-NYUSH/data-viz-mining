@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSE512: Data Visualization</title>
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" type="text/css" href="fonts.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="jquery.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script>
+  var toggleReading = function() {
+    $(".reading").toggleClass('hidden');
+  }
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" id="about">
+<div class='content'>
+
+<div class='title'>
+  <a href="index.html"><strong>CSE512</strong>
+     Data Visualization</a> (Spring 2021)
+</div>
+
+<div class="band"></div>
+<script>
+$(function() {
+  var thumbs = [
+    'value', 'models', 'eda', 'design', 'software', 'interaction', 'perception', 'color',
+    'uncertainty', 'map', 'animation', 'narrative', 'interp', 'ethics', 'networks', 'evaluation'
+  ];
+  for (var i = 0; i < thumbs.length; i++) {
+    $(".band").append('<a href="#lec-' + thumbs[i] + '" class="thumb" style="background-image:url(thumb/' + thumbs[i] + '.png)" title=' + thumbs[i] + '></a>');
+  }
+});
+</script>
+<br/>
+
+<div class='sidebar'>
+
+<div>
+<h1>instructor</h1>
+<div style="margin-bottom: 0.5em;">
+  <a href="https://homes.cs.washington.edu/~jheer/" class="person">Jeffrey Heer</a>
+  <small>OH: Tue after lecture</small>
+</div>
+</div>
+
+<div>
+<h1>assistants</h1>
+<div style="margin-bottom: 0.5em;">
+  <a href="#" class="person">Chanwut (Mick) Kittivorawong</a>
+  <small>OH: By appointment</small>
+</div>
+<div style="margin-bottom: 0.5em;">
+  <a href="#" class="person">Lisa Elkin</a>
+  <small>OH: Mon 2:30-3:30pm</small>
+</div>
+<div style="margin-bottom: 0.5em;">
+  <a href="#" class="person">Louis Maliyam</a>
+  <small>OH: Fri 1-2pm</small>
+</div>
+<div style="margin-bottom: 0.5em;">
+  <a href="https://yangliu.life/" class="person">Yang Liu</a>
+  <small>OH: By appointment</small>
+</div>
+</div>
+
+<div>
+<h1>meeting</h1>
+<small>Location: Zoom
+  </br>Time: Tu/Th 11:30-12:50
+</small>
+<br/>
+</div>
+
+<br/>
+
+<div data-spy="affix" data-offset-top="500" class="navbar">
+<div class='affix-child'>
+  <b>CSE512</b>
+</div>
+<ul class="menu nav">
+  <li>
+    <a href="#about">About</a>
+  </li>
+  <li>
+    <a href="#texts">Textbook</a>
+  </li>
+  <li>
+    <a href="#objectives">Learning Goals</a>
+  </li>
+  <li>
+    <a href="#schedule">Schedule</a>
+    <ul class="nav menu inline active-child">
+      <li><a href="#week1">1</a></li>
+      <li><a href="#week2">2</a></li>
+      <li><a href="#week3">3</a></li>
+      <li><a href="#week4">4</a></li>
+      <li><a href="#week5">5</a></li>
+      <li><a href="#week6">6</a></li>
+      <li><a href="#week7">7</a></li>
+      <li><a href="#week8">8</a></li>
+      <li><a href="#week9">9</a></li>
+      <li><a href="#week10">10</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#requirements">Assignments</a>
+    <ul class="nav menu inline" id="requirements-sub">
+      <li><a href="#participation" data-toggle="tooltip" title="Class Participation">CP</a></li>
+      <li><a data-toggle="tooltip" title="Assignment 1" href="a1.html">A1</a></li>
+      <li><a data-toggle="tooltip" title="Assignment 2" href="a2.html">A2</a></li>
+      <li><a data-toggle="tooltip" title="Assignment 3" href="a3.html">A3</a></li>
+      <li><a data-toggle="tooltip" title="Final Project" href="fp.html">FP</a></li>
+    </ul>
+    <script>
+      $(function() { $('[rel="tooltip"]').tooltip(); });
+    </script>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+    <a href="#resources"></a>
+    <!-- trick to make scrollspy to work-->
+  </li>
+  <li>
+    <a href="#qa">Q&amp;A</a> (<a href="https://edstem.org/us/courses/4939/discussion/">Ed</a>)
+  </li>
+</ul>
+</div>
+</div>
+
+<div class='article'>
+
+<p>
+The world is awash with increasing amounts of data, and we must keep afloat with our relatively constant perceptual and cognitive abilities. Visualization provides one means of combating information overload, as a well-designed visual encoding can supplant cognitive calculations with simpler perceptual inferences and improve comprehension, memory, and decision making. Furthermore, visual representations may help engage more diverse audiences in the process of analytic thinking.
+</p>
+
+<p>
+In this course we will study techniques for creating effective visualizations based on principles from graphic design, perceptual psychology, and cognitive science. The course is targeted both towards students interested in using visualization in their own work, as well as students interested in building better visualization tools and systems.
+</p>
+
+<p>
+In addition to class discussions, students will complete visualization design and data analysis assignments, as well as a final project. Students will share the results of their final project as both an interactive website and a video presentation.
+</p>
+
+<h2 id="texts">Textbooks</h2>
+
+<ul>
+<li><a href="http://www.amazon.com/gp/product/0961392142">The Visual Display of Quantitative Information</a>, E. Tufte. Graphics Press, 2001.</li>
+<li><a href="http://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118">Envisioning Information</a>, E. Tufte. Graphics Press, 1990.</li>
+<li>
+  <a href="https://observablehq.com/@uwdata/data-visualization-curriculum">Vega-Lite Visualization Notebook Curriculum</a>. Jeffrey Heer, Dominik Moritz, Jake VanderPlas, and Brock Craft.
+</li>
+<li><em>Optional:</em>
+  <a href="http://alignedleft.com/work/d3-book-2e">Interactive Data Visualization for the Web, 2nd Edition</a>. Scott Murray, O'Reilly Press.
+  <ul>
+    <li>To read online, use the "O'Reilly (Formerly Safari)" link on the <a href="https://guides.lib.uw.edu/c.php?g=341544&p=2299182">UW library page</a>.</li>
+    <li>Code examples available on <a href="https://github.com/alignedleft/d3-book/">GitHub</a>.</li>
+  </ul>
+</li>
+</ul>
+
+<h2 id="objectives">Learning Goals &amp; Objectives</h2>
+This course is designed to provide students with the foundations necessary for understanding and extending the current state of the art in data visualization. By the end of the course, students will have gained:
+<br/>
+<ul>
+<li>An understanding of key visualization techniques and theory, including data models, graphical perception and methods for visual encoding and interaction.</li>
+<li>Exposure to a number of common data domains and corresponding analysis tasks, including multivariate data, geo-spatial data, and networks.</li>
+<li>Practical experience building and evaluating visualization systems.</li>
+<li>The ability to read and discuss research papers from the visualization literature.</li>
+</ul>
+
+<h2 id="schedule">Schedule &amp; Readings</h2>
+
+<script type="text/javascript">
+$('#schedule-menu').affix({
+offset: {
+  top: $('#schedule').offset().top,
+  bottom: $('#schedule').offset().top + $('#schedule').height()
+}
+});
+</script>
+
+<h3 id="week1">Week 1</h3>
+<div class="day" id="lec-value">
+  <div>
+    <span class="date">Tue 3/30</span>
+    <span class="topic">The Value of Visualization</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-ValueOfVisualization.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <div class="assignment">
+    Assigned: <a href="a1.html">Assignment 1: Visualization Design</a> (Due: Wed 4/7)
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="uwnetid/readings/value/CMS-Chap1.pdf">Chapter 1: Information Visualization, in <em>Readings in Information Visualization</em>. Stuart Card, Jock Mackinlay, and Ben Shneiderman. 1999.</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://observablehq.com/@uwdata/introduction-to-vega-lite">Introduction to Vega-Lite / Altair</a>. One of:
+      <a href="https://observablehq.com/@uwdata/introduction-to-vega-lite">JavaScript (Observable)</a>,
+      <a href="https://colab.research.google.com/github/uwdata/visualization-curriculum/blob/master/altair_introduction.ipynb">Python (Colab)</a>,
+      <a href="https://github.com/uwdata/visualization-curriculum/blob/master/altair_introduction.ipynb">Python (Jupyter Notebook)</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="uwnetid/readings/value/Tufte-Challenger.pdf">Decision to Launch the Challenger, in <em>Visual Explanations</em>. Edward Tufte.</a>
+      (See also a <a href="https://people.rit.edu/wlrgsh/FINRobison.pdf">critique of Tufte's argument</a>.)
+    </li>
+  </ul>
+</div>
+<div class="day" id="lec-models">
+  <div>
+    <span class="date">Thu 4/1</span>
+    <span class="topic">Data &amp; Image Models</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-DataAndImageModels.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://observablehq.com/@uwdata/data-types-graphical-marks-and-visual-encoding-channels">Data Types, Graphical Marks, and Visual Encoding Channels</a>. One of:
+      <a href="https://observablehq.com/@uwdata/data-types-graphical-marks-and-visual-encoding-channels">JavaScript (Observable)</a>,
+      <a href="https://colab.research.google.com/github/uwdata/visualization-curriculum/blob/master/altair_marks_encoding.ipynb">Python (Colab)</a>,
+      <a href="https://github.com/uwdata/visualization-curriculum/blob/master/altair_marks_encoding.ipynb">Python (Jupyter Notebook)</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      Chapter 1: Graphical Excellence, In The Visual Display of Quantitative Information. Tufte.
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      Chapter 2: Graphical Integrity, In The Visual Display of Quantitative Information. Tufte.</li>
+    <li class="required">
+      <small>REQUIRED</small>
+      Chapter 3: Sources of Graphical Integrity, In The Visual Display of Quantitative Information. Tufte.</li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="uwnetid/readings/models/shneiderman96eyes.pdf">The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations, Shneiderman, Proc. IEEE Conference on Visual Languages, Boulder 1996.</a>
+    </li>
+  </ul>
+</div>
+
+<h3 id="week2">Week 2</h3>
+<div class="day" id='lec-eda'>
+<div>
+  <span class="date">Tue 4/6</span>
+  <span class="topic">Exploratory Data Analysis</span>
+  <small class="pull-right">
+    <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-EDA.pdf" class="link link-slides">Slides</a>
+  </small>
+</div>
+<ul class="reading">
+  <li class="required">
+    <small>REQUIRED</small>
+    <a href="https://observablehq.com/@uwdata/data-transformation">Data Transformation</a>. One of:
+    <a href="https://observablehq.com/@uwdata/data-transformation">JavaScript (Observable)</a>,
+    <a href="https://colab.research.google.com/github/uwdata/visualization-curriculum/blob/master/altair_data_transformation.ipynb">Python (Colab)</a>,
+    <a href="https://github.com/uwdata/visualization-curriculum/blob/master/altair_data_transformation.ipynb">Python (Jupyter Notebook)</a>
+  </li>
+  <li class="required">
+    <small>REQUIRED</small>
+    <a href="uwnetid/readings/multidimensional/Stolte_Polaris_TVCG.pdf">
+    Polaris: A System for Query, Analysis and Visualization of Multi-dimensional Relational Databases. Stolte, Tang, and Hanrahan. IEEE TVCG 2002.</a>
+  </li>
+  <li class="required">
+    <small>Encouraged</small>
+    Chapter 4: Data-Ink and Graphical Redesign, In The Visual Display of Quantitative Information. Tufte.
+  </li>
+  <li class="required">
+    <small>Encouraged</small>
+    Chapter 5: Chartjunk, In The Visual Display of Quantitative Information. Tufte.
+  </li>
+  <li class="required">
+    <small>Encouraged</small>
+    Chapter 6: Data-Ink Maximization and Graphical Design, In The Visual Display of Quantitative Information.
+  </li>
+  <li class="optional">
+    <small>Optional</small>
+    <a href="https://observablehq.com/@uwdata/introducing-arquero">Introducing Arquero: A JavaScript library for query processing and transformation of data tables.</a>
+  </li>
+  <li class="optional">
+    <small>Optional</small>
+    <a href="uwnetid/readings/eda/Voyager_InfoVis.pdf">Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations. Kanit Wongsuphasawat, Dominik Moritz, Anushka Anand, Jock Mackinlay, Bill Howe &amp; Jeffrey Heer. IEEE Transactions on Visualization and Computer Graphics, 22(1), 649-658, 2016.</a>
+  </li>
+</ul>
+</div>
+<div class="day" id='lec-design'>
+<div>
+  <span class="date">Thu 4/9</span>
+  <span class="topic">A1 Review &amp; Design Activity</span>
+  <small class="pull-right">
+    <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-DesignActivity.pdf" class="link link-slides">Slides</a>
+  </small>
+</div>
+<div class="assignment">
+  Assigned: <a href="a2.html">Assignment 2: Exploratory Analysis</a> (Due: Mon 4/26)
+</div>
+
+<ul class="reading">
+  <li class="required">
+    <small>REQUIRED</small>
+    <a href="https://observablehq.com/@uwdata/scales-axes-and-legends">Scales, Axes, and Legends</a>. One of:
+    <a href="https://observablehq.com/@uwdata/scales-axes-and-legends">JavaScript (Observable)</a>,
+    <a href="https://colab.research.google.com/github/uwdata/visualization-curriculum/blob/master/altair_scales_axes_legends.ipynb">Python (Colab)</a>,
+    <a href="https://github.com/uwdata/visualization-curriculum/blob/master/altair_scales_axes_legends.ipynb">Python (Jupyter Notebook)</a>
+  </li>
+  <li class="required">
+    <small>REQUIRED</small>
+    <a href="https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9">Design and Redesign in Data Visualization. Martin Wattenberg and Fernanda Vi&eacute;gas. 2015.</a>
+  </li>
+  <li class="required">
+    <small>Encouraged</small>
+    Chapter 8: Data Density and Small Multiples, In The Visual Display of Quantitative Information. Tufte.
+  </li>
+  <li class="required">
+    <small>Encouraged</small>
+    Chapter 2: Macro/Micro Readings, In Envisioning Information. Tufte.
+  </li>
+  <li class="required">
+    <small>Encouraged</small>
+    Chapter 4: Small Multiples, In Envisioning Information. Tufte.
+  </li>
+  <li class="optional">
+    <small>Optional</small>
+    <a href="https://observablehq.com/@uwdata/tidy-data-in-javascript">Tidy data in JavaScript.</a>
+  </li>
+</ul>
+</div>
+
+<h3 id="week3">Week 3</h3>
+<div class="day" id="tableau-tutorial">
+  <div>
+    <span class="date">Mon 4/12</span>
+    <span class="topic">Tableau Tutorial</span> - <em>4:30pm-5:30pm via Zoom (Optional)</em>
+    <small class="pull-right">
+    </small>
+  </div>
+</div>
+<div class="day" id="lec-encoding">
+  <div>
+    <span class="date">Tue 4/13</span>
+    <span class="topic">Visual Encoding</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-VisualEncoding.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://observablehq.com/@uwdata/multi-view-composition">Multi-View Composition</a>. One of:
+      <a href="https://observablehq.com/@uwdata/multi-view-composition">JavaScript (Observable)</a>,
+      <a href="https://colab.research.google.com/github/uwdata/visualization-curriculum/blob/master/altair_view_composition.ipynb">Python (Colab)</a>,
+      <a href="https://github.com/uwdata/visualization-curriculum/blob/master/altair_view_composition.ipynb">Python (Jupyter Notebook)</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="uwnetid/readings/design/norman-ch3.pdf">Chapter 3: The Power of Representation, in <em>Things That Make Us Smart</em>. Don Norman.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://hci.stanford.edu/cs448b/papers/number-representation.pdf">The representation of numbers. Zhang and Norman.</a>
+    </li>
+  </ul>
+</div>
+<div class="day" id="lec-interaction">
+  <div>
+    <span class="date">Thu 4/15</span>
+    <span class="topic">Interaction</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Interaction.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://observablehq.com/@uwdata/interaction">Interaction</a>. One of:
+      <a href="https://observablehq.com/@uwdata/interaction">JavaScript (Observable)</a>,
+      <a href="https://colab.research.google.com/github/uwdata/visualization-curriculum/blob/master/altair_interaction.ipynb">Python (Colab)</a>,
+      <a href="https://github.com/uwdata/visualization-curriculum/blob/master/altair_interaction.ipynb">Python (Jupyter Notebook)</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="http://portal.acm.org/ft_gateway.cfm?id=2146416&type=pdf">Interactive Dynamics for Visual Analysis. Jeffrey Heer &amp; Ben Shneiderman. 2012.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="https://medium.com/@dominikus/the-end-of-interactive-visualizations-52c585dcafcb">The Death of Interactive Infographics? Dominikus Baur. 2017.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="https://www.vis4.net/blog/posts/in-defense-of-interactive-graphics/">In Defense of Interactive Graphics. Gregor Aisch. 2017.</a>
+    </li>
+    <li class="demo video">
+      <small>Video</small>
+      <a href="http://stat-graphics.org/movies/">Classic systems on stat-graphics.org</a>
+    </li>
+  </ul>
+</div>
+
+<h3 id="week4">Week 4</h3>
+<div class="day" id="lec-map">
+  <div>
+    <span class="date">Tue 4/20</span>
+    <span class="topic">Maps</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Maps.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://observablehq.com/@uwdata/cartographic-visualization">Cartographic Visualization</a>. One of:
+      <a href="https://observablehq.com/@uwdata/cartographic-visualization">JavaScript (Observable)</a>,
+      <a href="https://colab.research.google.com/github/uwdata/visualization-curriculum/blob/master/altair_cartographic.ipynb">Python (Colab)</a>,
+      <a href="https://github.com/uwdata/visualization-curriculum/blob/master/altair_cartographic.ipynb">Python (Jupyter Notebook)</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="uwnetid/readings/map/Dent-Chap11.pdf">Chapter 11: The Cartogram: Value-by-Area Mapping, in <em>Cartography: Thematic Map Design</em>. Dent.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="uwnetid/readings/map/jenny.pdf">Adaptive Composite Map Projections. Bernhard Jenny. IEEE InfoVis 2012.</a>
+    </li>
+  </ul>
+</div>
+<div class="day" id="lec-narrative">
+  <div>
+    <span class="date">Thu 4/22</span>
+    <span class="topic">Narrative (Matt Conlen, UW &amp; New York Times)</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Narrative.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="uwnetid/readings/narrative/2010-Narrative-InfoVis.pdf">Narrative Visualization: Telling Stories with Data. Edward Segel &amp; Jeffrey Heer. InfoVis 2010.</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="http://michaelnielsen.org/reinventing_explanation/">Reinventing Explanation. Michael Nielsen, 2014.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://idl.cs.washington.edu/papers/graphscape">GraphScape: A Model for Automated Reasoning about Visualization Similarity and Sequencing. Younghoon Kim, Kanit Wongsuphasawat, Jessica Hullman, Jeffrey Heer. ACM CHI 2017.</a>
+    </li>
+  </ul>
+</div>
+
+<h3 id="week5">Week 5</h3>
+<div class="day" id="lec-software">
+  <div>
+    <span class="date">Tue 4/27</span>
+    <span class="topic">Visualization Tools</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Tools.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <div class="assignment">
+    Assigned: <a href="a3.html">Assignment 3: Interactive Visualization</a> (Due: Mon 5/10)
+  </div>
+  <ul class="reading">
+    <li class="optional">
+      <small>Optional</small>
+      <a href="https://observablehq.com/@uwdata/a-minimal-introduction-to-javascript-and-observable">A Minimal Introduction to JavaScript and Observable.</a> <em>Read this first if you are new to JavaScript and/or Observable notebooks!</em>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://observablehq.com/@uwdata/introduction-to-d3-part-1/">Notebook: Introduction to D3, Part 1</a>.
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="uwnetid/readings/software/2011-D3-InfoVis.pdf">D3: Data-Driven Documents. Michael Bostock, Vadim Ogievetsky &amp; Jeffrey Heer. InfoVis 2011.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="https://www.youtube.com/watch?v=9uaHRWj04D4">Vega-Lite: A Grammar of Interactive Graphics. K. Wongsuphasawat, D. Moritz, A. Satyanarayan &amp; J. Heer. OpenVis Conf 2017 Presentation.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://idl.cs.washington.edu/papers/vega-lite">Vega-Lite: A Grammar of Interactive Graphics. Arvind Satyanarayan, Dominik Moritz, Kanit Wongsuphasawat &amp; Jeffrey Heer. IEEE InfoVis 2016.</a>
+    </li>
+  </ul>
+</div>
+<div class="day" id="lec-d3">
+  <div>
+    <span class="date">Thu 4/29</span>
+    <span class="topic">D3.js Deep Dive</span>
+    <small class="pull-right">
+      <!--
+      <a href="https://docs.google.com/presentation/d/1izPbshPbJsR0Ujd5JxYgKr0tpJNLGZQmu2qpxkGLpUY/edit?usp=sharing" class="link link-slides">Slides</a>
+      -->
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://observablehq.com/@uwdata/introduction-to-d3-part-2/">Notebook: Introduction to D3, Part 2</a>. <em>(Note: we will work through this in class, but we encourage you to skim it ahead of time!)</em>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      Chapters 9, 10 in <em>Interactive Data Visualization for the Web, 2nd Edition</em>. Scott Murray.</a>
+    </li>
+  </ul>
+</div>
+
+<h3 id="week6">Week 6</h3>
+<div class="day" id="lec-animation">
+  <div>
+    <span class="date">Tue 5/4</span>
+    <span class="topic">Animation</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Animation.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tvcg2008-trendvis.pdf">Effectiveness of Animation in Trend Visualization. George Robertson, Roland Fernandez, Danyel Fisher, Bongshin Lee, &amp; John Stasko. InfoVis 2008.</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="http://easings.net/">Easing Functions Cheat Sheet.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="uwnetid/readings/animation/2007-AnimatedTransitions-InfoVis.pdf">Animated Transitions in Statistical Data Graphics. Jeffrey Heer &amp; George Robertson. IEEE InfoVis 2007.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://hci.stanford.edu/cs448b/papers/Tversky_AnimationFacilitate_IJHCS02.pdf">Animation: Can It Facilitate? Barbara Tversky, Julie Morrison, Mireille Betrancourt, International Journal of Human Computer Studies, v57, p247-262. 2002.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://www.win.tue.nl/~vanwijk/zoompan.pdf">Smooth and Efficient Zooming and Panning. Jack J. van Wijk and Wim A.A. Nuij. IEEE InfoVis 2003.</a>
+    </li>
+  </ul>
+</div>
+<div class="day" id="lec-color">
+  <div>
+    <span class="date">Thu 5/6</span>
+    <span class="topic">Color</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Color.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://blog.datawrapper.de/which-color-scale-to-use-in-data-vis/">Which color scale to use when visualizing data. Lisa Charlotte Rost.</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="http://idl.cs.washington.edu/papers/quantitative-color/">Somewhere Over the Rainbow: An Empirical Assessment of Quantitative Colormaps. Yang Liu, Jeffrey Heer. ACM CHI 2018.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://www.personal.psu.edu/cab38/ColorSch/ASApaper.html">Color Use Guidelines for Data Representation. Cynthia Brewer. Proc. Section on Statistical Graphics, American Statistical Association, pp. 55-60, 1999.</a>
+      <a href="http://www.personal.psu.edu/cab38/ColorSch/Schemes.html">Color Scheme Explorer</a>.
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://gramaz.io/pdf/gramazio-2016-ccd.pdf">Colorgorical: Creating Discriminable and Preferable Color Palettes for Information Visualization. Connor Gramazio, David Laidlaw &amp; Karen Schloss. IEEE Transactions on Visualization and Computer Graphics. 2017.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      D3 color scales:
+      <a href="https://github.com/d3/d3-scale-chromatic">d3-scale-chromatic</a>
+    </li>
+  </ul>
+</div>
+
+<h3 id="week7">Week 7</h3>
+<div class="day" id="lec-perception">
+  <div>
+    <span class="date">Tue 5/11</span>
+    <span class="topic">Graphical Perception</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Perception.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <div class="assignment">
+    Assigned: <a href="a3-peereval.html">A3 Peer Evaluation</a> (Due: Tue 5/18)
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="http://www.csc.ncsu.edu/faculty/healey/PP/index.html">Perception in Visualization. Christopher Healey.</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73">39 Studies About Human Perception in 30 Minutes. Kennedy Elliott.</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      Chapter 3: Layering and Separation, In Envisioning Information. Tufte.
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="uwnetid/readings/perception/Cleveland_GraphicalPerception.pdf">Graphical Perception: Theory, Experimentation and the Application to the Development of Graphical Models. William S. Cleveland, Robert McGill. J. Am. Stat. Assoc. 79(387):531-554, 1984.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://idl.cs.washington.edu/papers/crowdsourcing-graphical-perception">Crowdsourcing Graphical Perception: Using Mechanical Turk to Assess Visualization Design. Jeffrey Heer, Michael Bostock. ACM CHI 2010.</a>
+    </li>
+  </ul>
+</div>
+<div class="day" id="lec-prototypes">
+  <div>
+    <span class="date">Thu 5/13</span>
+    <span class="topic">A3 Review &amp; Critique</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Critique.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <div class="assignment">
+    Assigned: <a href="fp.html">Final Project Proposal</a> (Due: Wed 5/19)
+  </div>
+  <ul class="reading">
+    <li class="optional">
+      <small>Optional</small>
+      <a href="https://bost.ocks.org/mike/algorithms/">Visualizing Algorithms. Mike Bostock. 2014.</a>
+    </li>
+  </ul>
+</div>
+
+
+<h3 id="week8">Week 8</h3>
+<div class="day" id="lec-uncertainty">
+  <div>
+    <span class="date">Tue 5/18</span>
+    <span class="topic">Uncertainty</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Uncertainty.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="https://www.youtube.com/watch?v=pTVAn4oLvbc">The Visual Uncertainty Experience. Jessica Hullman. OpenVis Conf 2016.</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="http://graphics.cs.wisc.edu/Papers/2014/CG14/Preprint.pdf">Error Bars Considered Harmful: Exploring Alternate Encodings for Mean and Error. Michael Correll, Michael Gleicher. IEEE InfoVis 2014.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6327255">Visual Semiotics &amp; Uncertainty Visualization: An Empirical Study. Alan MacEachren, Robert Roth, James O'Brien, Bonan Li, Derek Swingley, Mark Gahegan.
+      IEEE InfoVis 2012.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://idl.cs.washington.edu/papers/when-ish-is-my-bus/">When(ish) is My Bus? User-centered Visualizations of Uncertainty in Everyday, Mobile Predictive Systems. Matthew Kay, Tara Kola, Jessica Hullman, Sean Munson. ACM CHI 2016.</a>
+    </li>
+  </ul>
+</div>
+<div class="day" id="lec-networks">
+  <div>
+    <span class="date">Thu 5/20</span>
+    <span class="topic">Networks (Jane Hoffswell, Adobe Research &amp; UW)</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Networks.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="uwnetid/readings/trees/Bruls_SquarifiedTreemaps.pdf">Squarified Treemaps. Mark Bruls, Kees Huizing &amp; Jarke van Wijk. Eurographics Data Visualization 2000.</a>
+    </li>
+    <li class="REQUIRED">
+      <small>REQUIRED</small>
+      <a href="http://www.aviz.fr/wiki/uploads/Teaching2014/bundles_infovis.pdf">Hierarchical Edge Bundles: Visualization of Adjacency Relations in Hierarchical Data. Danny Holten. InfoVis 2006.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="uwnetid/readings/networks/Dwyer2009FastConstraints.pdf">Scalable, Versatile and Simple Constrained Graph Layout. Tim Dwyer. EuroVis 2009.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://dmrussell.net/CHI2010/docs/p213.pdf">ManyNets: An Interface for Multiple Network Analysis and Visualization. Freire et al. ACM CHI 2010.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="https://mbostock.github.io/d3/talk/20110921/#0">Use the Force! Michael Bostock. 2011.</a> (<a href="https://vimeo.com/29458354">Video</a>)
+    </li>
+  </ul>
+</div>
+
+<h3 id="week9">Week 9</h3>
+<div class="day" id="lec-ethics">
+  <div>
+    <span class="date">Tue 5/25</span>
+    <span class="topic">Ethics &amp; Deceptive Visualization (Michael Correll, Tableau)</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-EthicsDeception.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="uwnetid/readings/ethical/correll19ethical.pdf">Ethical Dimensions of Visualization Research. Michael Correll. ACM CHI 2019.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="uwnetid/readings/ethical/pandey15deceptive.pdf">How Deceptive are Deceptive Visualizations?: An Empirical Analysis of Common Distortion Techniques. Anshul Vikram Pandey, Katharina Rall, Margaret Satterthwaite, Oded Nov, Enrico Bertini. ACM CHI 2015.</a>
+    </li>
+  </ul>
+</div>
+<div class="day" id="lec-scalable">
+  <div>
+    <span class="date">Thu 5/27</span>
+    <span class="topic">Scalable Visualization</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Scalability.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="http://idl.cs.washington.edu/papers/immens">imMens: Real-time Visual Querying of Big Data. Zhicheng Liu, Biye Jiang, Jeffrey Heer. EuroVis 2013.</a>
+    </li>
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="http://idl.cs.washington.edu/papers/falcon/">Falcon: Balancing Interactive Latency and Resolution Sensitivity for Scalable Linked Visualizations. Dominik Moritz, Bill Howe, Jeffrey Heer. ACM CHI 2019.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="https://www.cs.umd.edu/~leilani/static/papers/forecache_cr_sigmod2016.pdf">Dynamic Prefetching of Data Tiles for Interactive Visualization. Leilani Battle, Remco Chang, Michael Stonebraker. SIGMOD 2016.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://idl.cs.washington.edu/papers/trust-but-verify">Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data. Dominik Moritz, Danyel Fisher, Bolin Ding, Chi Wang. ACM CHI 2017.</a>
+    </li>
+  </ul>
+</div>
+
+<h3 id="week10">Week 10</h3>
+<div class="day" id="lec-evaluation">
+  <div>
+    <span class="date">Tue 6/1</span>
+    <span class="topic">Evaluation &amp; Review</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-Evaluation.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+  <ul class="reading">
+    <li class="required">
+      <small>REQUIRED</small>
+      <a href="http://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/NestedModel.pdf">A Nested Model for Visualization Design and Validation. Tamara Munzner. IEEE InfoVis 2009.</a>
+    </li>
+    <li class="optional">
+      <small>Optional</small>
+      <a href="http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/">Design Study Methodology: Reflections from the Trenches and the Stacks. Michael Sedlmair, Miriah Meyer &amp; Tamara Munzner. IEEE InfoVis 2012.</a>
+    </li>
+  </ul>
+</div>
+<div class="day" id="lec-present">
+  <div>
+    <span class="date">Thu 6/3</span>
+    <span class="topic">Final Project Video Showcase</span>
+    <small class="pull-right">
+      <a href="http://courses.cs.washington.edu/courses/cse512/21sp/lectures/CSE512-FinalProjects.pdf" class="link link-slides">Slides</a>
+    </small>
+  </div>
+</div>
+
+<h2 id="requirements">Assignments</h2>
+
+<ul>
+  <li><a href="#participation">Class Participation</a> 10%</li>
+  <li><a href="a1.html">Assignment 1: Visualization Design</a> 10%</li>
+  <li><a href="a2.html">Assignment 2: Exploratory Data Analysis</a> 15%</li>
+  <li><a href="a3.html">Assignment 3: Interactive Visualization</a> 25%</li>
+  <li><a href="fp.html">Final Project</a> 40%</li>
+</ul>
+
+<h3>Policies</h3>
+
+<p>Late Policy: We will deduct 10% for each day an assignment is late. Please contact the instructors well in advance to request extensions if needed.</p>
+
+<p>Plagiarism Policy: Assignments should consist primarily of original work. Building off of others' work&mdash;including 3rd party libraries, public source code examples, and design ideas&mdash;is acceptable and in most cases encouraged. However, failure to cite such sources will result in score deductions proportional to the severity of the oversight.</p>
+
+<p>Religious Accommodation: Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available here: <a href="https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/">Religious Accommodations Policy</a>. Accommodations must be requested within the first two weeks of this course using the <a href="https://registrar.washington.edu/students/religious-accommodations-request/">Religious Accommodations Request form</a>.</p>
+
+<h2 id="participation">Class Participation</h2>
+
+<p>It is important to attend the lectures and read the readings. Each lecture will assume that you have read and are ready to discuss the day's readings.</p>
+
+<p>Class participation includes both in-lecture activities (as is feasible) and engagement on the <a href="https://edstem.org/us/courses/4939/discussion/">course discussion site (Ed)</a>. Up through week 8, all enrolled students are required to submit at least 1 substantive discussion post per week related to the course readings or lecture material. Each student also has 1 pass for skipping comments.
+</p>
+
+<p>Good comments typically exhibit one or more of the following:
+  <ul>
+    <li>Critiques of arguments made in the papers</li>
+    <li>Analysis of implications or future directions for work discussed in lecture or readings</li>
+    <li>Clarification of some point or detail presented in the class</li>
+    <li>Insightful questions about the readings or answers to other people's questions</li>
+    <li>Links to web resources or examples that pertain to a lecture or reading</li>
+  </ul>
+</p>
+
+<p>In addition, we will post short quizzes to reinforce important concepts. The quizzes are not graded (your score on a quiz will not affect your course grade), but you are required to complete the quiz as part of your course participation.</p>
+
+<h2 id="resources">Resources</h2>
+<p>See the <a href="resources.html">resources page</a> for visualization tools, related web sites, and software development tips.</p>
+
+<h2 id="qa">Q&amp;A</h2>
+<p>
+Questions should be posted on the <a href="https://edstem.org/us/courses/4939/discussion/">course discussion site (Ed)</a>.  If you have a private question, please email the instructors at <i>cse512@cs</i> or discuss it at office hours.
+</p>
+
+<div class='footer'>
+  <a href='http://cs.washington.edu'>Computer Science &amp; Engineering</a> -
+  <a href='http://www.washington.edu'>University of Washington</a>
+</div>
+
+</div>
+<br/>
+<br/>
+
+</div>
+</body>
+</html>
