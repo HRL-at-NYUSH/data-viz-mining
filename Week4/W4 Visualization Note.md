@@ -37,6 +37,6 @@ By now we have come to the end of the first phase. In the past three weeks, we h
 
 - Basic visualization theory
 - Geospatial data visualization
-- Natural language processing for textual data. 
+- Natural language processing for textual data
 
 Please let me know of your thoughts and preferences by setting up a meeting with me over the next week. Feel free to propose a 30 minute time slot via email.
