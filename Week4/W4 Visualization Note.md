@@ -33,5 +33,10 @@ The point of having proactive AI-powered recommendations is not to take the job 
 
 ## Next Steps
 
-By now we have come to the end of the first phase. In the past three weeks, we have surveyed topics in basic visualization theory, data preparation, special data, and interactivity. The goal of the first phase is to get us all on the same page, in terms of what tools and sources are available. For the coming month, you will work on a project to put your skills into practice and gain more knowledge in the field. There are several general directions: basic visualization theory, geospatial data visualization, natural language processing for textual data. For detailed plans and assignments, I will explain more during the Tuesday meeting and discuss them with you. 
+By now we have come to the end of the first phase. In the past three weeks, we have surveyed topics in basic visualization theory, data preparation, special data, and interactivity. The goal of the first phase is to get us all on the same page, in terms of what tools and sources are available. For the coming month, you will work on a project to put your skills into practice and gain more knowledge in the field. There are several general directions: 
 
+- Basic visualization theory
+- Geospatial data visualization
+- Natural language processing for textual data. 
+
+Please let me know of your thoughts and preferences by setting up a meeting with me over the next week. Feel free to propose a 30 minute time slot via email.
