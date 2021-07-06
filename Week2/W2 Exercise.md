@@ -61,13 +61,12 @@ domain, connecting the data to existing domain knowledge and giving it relevant 
 
 ### Insight Reports
 
-
-- [Changing Gender Composition of NYC Cooks - Tim Wu](https://colab.research.google.com/drive/1bz1Oykkjj_RmZ4qP_3l6glc5rk-TWLnh?usp=sharing)
 - [Data Exploration on Italian Immigrants and More - Amanda Huang](https://nbviewer.jupyter.org/gist/Oysters1874/fdd0e259c59b52d46810f334d6c49eeb)
 - [Data Exploration on Gender in "Relationship to Head of House" - Pamela Pan](https://colab.research.google.com/drive/1aGcd9dWKFJY_dc_kETsN88yEE8tr2IMB?usp=sharing)
-- [Fixing Stereotype or Not? Gender vs Occupation - Simon Bian [Still Adjusting]](https://colab.research.google.com/drive/1vu1bShkzQ0iE3dTOZIyR-q-zSQaO0uaK?usp=sharing)
-- [Profiles of Literate NYC Residents - Veronica Hu [Work in Progress]](https://colab.research.google.com/drive/1o3ub0rwH4w8nut8iG27aodEkHA-FM-lb?usp=sharing)
+- [Fixing Stereotype or Not? Gender vs Occupation - Simon Bian](https://colab.research.google.com/drive/1vu1bShkzQ0iE3dTOZIyR-q-zSQaO0uaK?usp=sharing)
+- [Profiles of Literate NYC Residents - Veronica Hu](https://colab.research.google.com/drive/1o3ub0rwH4w8nut8iG27aodEkHA-FM-lb?usp=sharing)
 - [Estimating Incomes of NYC Residents with LDA - Lucy Wu [Link to be added]](https://temp.com)
+- [Changing Gender Composition of NYC Cooks - Tim Wu](https://colab.research.google.com/drive/1bz1Oykkjj_RmZ4qP_3l6glc5rk-TWLnh?usp=sharing)
 - ...
 
 <br>
