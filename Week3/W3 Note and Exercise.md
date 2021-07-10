@@ -85,6 +85,12 @@ The [S4 Project](https://www.brown.edu/academics/spatial-structures-in-social-sc
 
 In addition, there are many modern NYC GIS data sources that can be overlayed on the historical spatial datasets. NYC Department of City Planning has an [open data page](https://www1.nyc.gov/site/planning/data-maps/open-data.page). The websites [Zola Map](https://zola.planning.nyc.gov/data) and [Facilities Explorer](https://capitalplanning.nyc.gov/map) are two interactive interfaces for those datasets.
 
+[NEW EDITS] 
+
+[Welcome to 1940s New York (CUNY)](http://www.1940snewyork.com/)
+
+[Manhattan Past | Maps](http://maps.manhattanpast.com/index.html)
+
 <img src="./images/spatial_data.png" alt="spatial_data" width="700"/>
 
 <br>
