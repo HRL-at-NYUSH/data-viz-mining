@@ -62,12 +62,20 @@ domain, connecting the data to existing domain knowledge and giving it relevant 
 ### Insight Reports
 
 - [Data Exploration on Italian Immigrants and More - Amanda Huang](https://nbviewer.jupyter.org/gist/Oysters1874/fdd0e259c59b52d46810f334d6c49eeb)
+
 - [Data Exploration on Gender in "Relationship to Head of House" - Pamela Pan](https://colab.research.google.com/drive/1aGcd9dWKFJY_dc_kETsN88yEE8tr2IMB?usp=sharing)
+
 - [Fixing Stereotype or Not? Gender vs Occupation - Simon Bian](https://colab.research.google.com/drive/1vu1bShkzQ0iE3dTOZIyR-q-zSQaO0uaK?usp=sharing)
+
+> With regards to previous scattered, case-by-case discussions on feminization in certain fields, this insight aims to explore how feminization in the most popular types of jobs has a relationship with job prestige. The data that I chose is the top 20 most occupied jobs given in the US census data from 1880 to 1940, as well as the data from the National Opinion Research Center (NORC) to provide a quantitative evaluation of certain occupations. Using the former, 20 jobs instead of all jobs, can lower the running time and eliminate jobs that appear owing to data errors. Using the latter, the arbitrary classification of jobs could be halted and more quantitative and less subjective results will be yielded. The final product is a scatterplot in which for each dot, its size varies with respect to the number of workers in certain fields, its coloration varies by the degree of confidence level we put in, its x-axis being a normalized scale of occupation prestige, and the y axis is a result yielded from regression analysis of women participation rate over years. The conclusion reached by this exploration is that in positions of higher social status, feminization plays a role. In spite of this, in positions contrary to higher perceived social statuses, feminization has mixed roles. It does not merely shift women towards the lower pay - as negative correlation and positive correlation constitute the two poles observed in the above graph.
+
 - [Profiles of Literate NYC Residents - Veronica Hu](https://colab.research.google.com/drive/1o3ub0rwH4w8nut8iG27aodEkHA-FM-lb?usp=sharing)
-- [Estimating Incomes of NYC Residents with LDA - Lucy Wu [Link to be added]](https://temp.com)
+
 - [Changing Gender Composition of NYC Cooks - Tim Wu](https://colab.research.google.com/drive/1bz1Oykkjj_RmZ4qP_3l6glc5rk-TWLnh?usp=sharing)
-- ...
+
+> From 1860 to 1940, the gender composition of cooks in NYC had gradually transition from female-majority to male-majority. I want to explore what factors had driven this change. To answer the question, I used the demographic variables “Age”, “Marital Status”, “Birthplace” across the 9 censuses to depict the NYC cooks’ profile. To visually explore the data, I chose pie charts to show changing composition in “Gender” and “Marital Status”, I tried overlaid histograms with density curve to show “Age” distribution differences, and I wish I could use an animated bar chart to show the changing rankings of top ”Birthplaces” of cooks. Finally, with the help from the visualizations, I found that the reversed gender composition could be mainly caused by the shifting ethnic composition of the cooks. 
+
+- [Estimating Incomes of NYC Residents with LDA - Lucy Wu [Link to be added]](https://temp.com)
 
 <br>
 <br>
