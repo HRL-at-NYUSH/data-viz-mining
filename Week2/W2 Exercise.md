@@ -61,7 +61,11 @@ domain, connecting the data to existing domain knowledge and giving it relevant 
 
 ### Insight Reports
 
-- [Data Exploration on Italian Immigrants and More - Amanda Huang](https://nbviewer.jupyter.org/gist/Oysters1874/fdd0e259c59b52d46810f334d6c49eeb)
+- [Data Exploration on Population Movements and Italian Immigrants - Amanda Huang](https://nbviewer.jupyter.org/gist/Oysters1874/fdd0e259c59b52d46810f334d6c49eeb)
+
+> In my insight report, based on the census data of a specific year, I would like to explore the distribution of immigrants' birth countries and the overall trends of population movements. I draw the world map with pyechart and use different colors to encode the number of immigrants. Adding dynamic lines can make the visualization more vivid. But it may be more efficient to encode the number through the thickness of the lines, however, I haven't figured out how to do it with pyechart.
+
+> I also want to study the characteristics of Italian immigrants and their living conditions in the United States, by analyzing their age distributions, literacy rate, naturalization status, and occupations. I have used bar chart, stacked bar chart, and heat map to visualize it. By using the module Altair, it is easy to add the tooltip, therefore enhancing the interactivity. Stacked bar charts will be a good choice when we need to show the quantitative difference between different groups. It is very intuitive and can deliver accurate data information.
 
 - [Data Exploration on Gender in "Relationship to Head of House" - Pamela Pan](https://colab.research.google.com/drive/1aGcd9dWKFJY_dc_kETsN88yEE8tr2IMB?usp=sharing)
 
