@@ -15,7 +15,80 @@ For easier integration with computer vision (image processing) tools in the Pyth
 
 **Rasterio**
 
+> High performance, lower cognitive load, cleaner and more transparent code. This is what Rasterio is about. ([Intro](https://rasterio.readthedocs.io/en/latest/intro.html))
+> 
+> For Mac OS X, pip install rasterio ([Installation for other OS](https://rasterio.readthedocs.io/en/latest/installation.html))
+> 
+> `import rasterio`
+> 
+> `dataset = rasterio.open('example.tif')`
+> 
+> `dataset.count` (number of bands) A dataset band is an array of values representing the partial distribution of a single variable in 2-dimensional (2D) space. All band arrays of a dataset have the same number of rows and columns. 
+> 
+> `dataset.bounds`
+> 
+> `dataset.transform` `dataset.transform * (dataset.width, dataset.height) -> (x, y) in the CRS`
+> 
+> `dataset.crs`
+> 
+> **Read raster data**
+> 
+> `dataset.indexes` `(1,)` Following the GDAL convention, bands are indexed from 1.
+> 
+> `band1 = dataset.read(1)`
+> 
+> **Translate between pixel positions and coordinates**
+> 
+> `row,col = dataset.index(x,y)`
+> `x, y = dataset.xy(row,col)`
+> 
+> Create raster data - sample code [here](https://rasterio.readthedocs.io/en/latest/quickstart.html#creating-data).
+> 
+> Advanced topics
+> 
+> Raster data processing with CLI [rio-calc](https://rasterio.readthedocs.io/en/latest/topics/calc.html#using-rio-calc) 
+> 
+> RGB [Color](https://rasterio.readthedocs.io/en/latest/topics/color.html) will be in three separate bands of a GeoTIFF. Check color interpretation by `dataset.colorinterp[0]`, set it during creation using `dataset.profile['photometric']`. 
+> 
+> [Vector Features](https://rasterio.readthedocs.io/en/latest/topics/features.html) via `shapes()` and `rasterize()`.
+> 
+> [Interoperability between raster and image](https://rasterio.readthedocs.io/en/latest/topics/image_processing.html)
+> 
+> `from rasterio.plot import reshape_as_raster, reshape_as_image`
+> 
+> `raster = rasterio.open("tests/data/RGB.byte.tif").read()`
+> `raster.shape (3, 718, 791)`
+> 
+> `image = reshape_as_image(raster)`
+> `image.shape (718, 791, 3)`
+> 
+> [Masking a raster using a shapefile](https://rasterio.readthedocs.io/en/latest/topics/masking-by-shapefile.html#masking-a-raster-using-a-shapefile). [Nodata Mask](https://rasterio.readthedocs.io/en/latest/topics/masks.html) (Special mask meaning in Numpy vs Rasterio)
+> 
+> Reduced resolution [overview](https://rasterio.readthedocs.io/en/latest/topics/overviews.html) and [Resampling](https://rasterio.readthedocs.io/en/latest/topics/resampling.html) and [**Plotting**](https://rasterio.readthedocs.io/en/latest/topics/plotting.html). 
+> 
+> [Reprojection](https://rasterio.readthedocs.io/en/latest/topics/reproject.html)
+> 
+> High performance: [Concurrent processing](https://rasterio.readthedocs.io/en/latest/topics/concurrency.html), [In-Memory Files](https://rasterio.readthedocs.io/en/latest/topics/memory-files.html), [Windowed reading and writing](https://rasterio.readthedocs.io/en/latest/topics/windowed-rw.html).
 
+
+**opencv** 
+
+- https://docs.opencv.org/4.5.3/index.html (Colab uses version 4.1.2)
+- [Thresholding](https://docs.opencv.org/4.5.2/d7/d4d/tutorial_py_thresholding.html)
+- [Contours](https://docs.opencv.org/4.5.2/d3/d05/tutorial_py_table_of_contents_contours.html)
+
+**scikit-image** 
+
+- https://scikit-image.org/
+
+
+**Miscellaneous**
+
+A very interesting [StackOverflow Thread](https://stackoverflow.com/questions/56905592/automatic-contrast-and-brightness-adjustment-of-a-color-photo-of-a-sheet-of-pape) about "Automatic Contrast and Brightness Adjustment".
+
+[StackOverflow Thread](https://dsp.stackexchange.com/questions/2411/what-are-the-most-common-algorithms-for-adaptive-thresholding) on Common Adpative Thresholding Algorithms.
+
+[StackOverflow Thread](https://stackoverflow.com/questions/45322630/how-to-detect-lines-in-opencv) on detecting lines and connecting them.
 
 
 **Additional Resources**: 
