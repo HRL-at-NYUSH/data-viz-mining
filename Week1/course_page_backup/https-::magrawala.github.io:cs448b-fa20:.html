@@ -1,0 +1,2815 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.5.1 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>CS 448B Visualization (Fall 2020)</title>
+
+
+
+
+<meta name="description" content="Course Website.">
+
+
+
+
+<meta name="author" content="CS 448B Visualization">
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="CS 448B Visualization (Fall 2020)">
+<meta property="og:title" content="CS 448B Visualization (Fall 2020)">
+
+
+  <link rel="canonical" href="https://magrawala.github.io/cs448b-fa20/index">
+  <meta property="og:url" content="https://magrawala.github.io/cs448b-fa20/index">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Maneesh Agrawala",
+      "url" : "https://magrawala.github.io/cs448b-fa20",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://magrawala.github.io/cs448b-fa20/feed.xml" type="application/atom+xml" rel="alternate" title="CS 448B Visualization (Fall 2020) Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://magrawala.github.io/cs448b-fa20/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<!-- MA: 12/25/19 Add Favicon -->
+<link rel="shortcut icon" href="assets/icons/graphics-favicon.ico">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+<!--    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://magrawala.github.io/cs448b-fa20/">CS 448B Visualization (Fall 2020)</a>
+        <ul class="visible-links">
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div> --> <!-- MA: 9/1/17 Commented out masthead title and nav -->
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+
+    <div class="author__content">
+      <!-- Hacked to add link to main site_url MA: 9/12/17 -->
+    
+    <h3 class="author__name" itemprop="name"><a href="https://magrawala.github.io/cs448b-fa20/" style="text-decoration: none;">CS 448B Visualization</a></h3> 
+    
+      <p class="author__bio" itemprop="description">
+        Stanford CS course on data visualization techniques (Fall 2020) <br><br> Location: <a href="https://canvas.stanford.edu/courses/123902/external_tools/5384">Canvas/Zoom</a> <br> Time: TTh 10:30-11:50am
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="https://magrawala.github.io/cs448b-fa20/#about"><span class="nav__sub-title">About</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://magrawala.github.io/cs448b-fa20/#learningGoals"><span class="nav__sub-title">Learning Goals</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://magrawala.github.io/cs448b-fa20/#textbooks"><span class="nav__sub-title">Textbooks/Resources</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://magrawala.github.io/cs448b-fa20/#schedule"><span class="nav__sub-title">Schedule</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/#week1" class="">&nbsp; &nbsp; Week 1</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/#week2" class="">&nbsp; &nbsp; Week 2</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/#week3" class="">&nbsp; &nbsp; Week 3</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/#week4" class="">&nbsp; &nbsp; Week 4</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/#week5" class="">&nbsp; &nbsp; Week 5</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/#week6" class="">&nbsp; &nbsp; Week 6</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/#week7" class="">&nbsp; &nbsp; Week 7</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/#week8" class="">&nbsp; &nbsp; Week 8</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/#week9" class="">&nbsp; &nbsp; Week 9</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/#week10" class="">&nbsp; &nbsp; Week 10</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://magrawala.github.io/cs448b-fa20/#teachingStaff"><span class="nav__sub-title">Teaching Staff</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://magrawala.github.io/cs448b-fa20/#assignmentsRequirements"><span class="nav__sub-title">Assignments</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/classParticipation.html" class="">&nbsp; &nbsp; Class Participation</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/a1.html" class="">&nbsp; &nbsp; Assignment 1</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/a2.html" class="">&nbsp; &nbsp; Assignment 2</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/a3.html" class="">&nbsp; &nbsp; Assignment 3</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://magrawala.github.io/cs448b-fa20/finalProject.html" class="">&nbsp; &nbsp; Final Project</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<div id="about"></div>
+
+<p class="full"><img src="https://magrawala.github.io/cs448b-fa20/assets/images/banner2020Fall-v2.png" alt="banner image" /></p>
+
+<p>Visual media are increasingly generated, manipulated, and transmitted
+by computers. When well designed, such displays capitalize on human
+facilities for processing visual information and thereby improve
+comprehension, memory, inference, and decision making.
+<!--Yet the digital
+tools for transforming data into visualizations still require
+low-level interaction by skilled human designers. As a result,
+producing effective visualizations can take hours or days and consume
+considerable human effort. -->
+Effective visual representations can help to engage diverse audiences
+in the process of analytic, data-driven thinking.</p>
+
+<p>In this course we will study techniques and algorithms for creating
+effective visualizations based on principles from
+graphic design, visual art, perceptual psychology and cognitive
+science. The course is targeted both towards students interested in
+using visualization in their own work, as well as students interested
+in building better visualization tools and systems.
+<!-- The class will meet twice a week. -->
+In addition to participating in class discussions,
+students will have to complete several short data
+analysis and visualization design assignments as well as a final project.
+<!-- Students will be expected to write up the results of the project in
+the form of a conference paper submission. --></p>
+
+<p>There are no official prerequisites for the class, but the class is
+aimed at graduate students and advanced undergraduates.
+Familiarity with the material in CS147, CS148 and CS142 is especially
+useful. Most important is a basic working knowledge of, or willingness to learn,
+web-programming, especially JavaScript, Vega-Lite and D3. Experience with data
+analysis applications (e.g. R, Python, Excel) is also helpful.
+<!-- The -->
+<!-- final project can be developed using any suitable language or -->
+<!-- application. -->
+While we will cover a little bit of JavaScript/Vega-Lite/D3 in
+class, most of the other APIs, applications and languages will not be
+taught in the course. However many introductory tutorials at the level
+required for the class are available on the web and we will help you
+find the relevant information as you need it.</p>
+
+<p>*Contact us via
+ <a href="https://piazza.com/stanford/fall2020/cs448b/">Piazza</a> if you are
+ worried about whether you have the background for the course.</p>
+
+<!-- # <a id="textbooks"></a>Learning Goals # -->
+<div id="learningGoals"><h1 style="margin-bottom:0px">Learning Goals </h1></div>
+<hr style="margin-top:0px" />
+
+<p>The goals of this course are to provide students with
+the foundations
+necessary for understanding and extending the current state of the art
+in visualization. By the end of the course, students will have:</p>
+<ul>
+  <li>An understanding of key visualization techniques and theory, including data models, graphical perception and methods for visual encoding and interaction.</li>
+  <li>Exposure to a number of common data domains and corresponding analysis tasks, including exploratory data analysis and network analysis.</li>
+  <li>Practical experience building and evaluating visualization systems using Vega-Lite and D3.</li>
+  <li>The ability to read and discuss research papers from the visualization literature.</li>
+</ul>
+
+<!-- # <a id="textbooks"></a>Textbooks # -->
+<div id="textbooks"><h1 style="margin-bottom:0px">Textbooks/Resources </h1></div>
+<hr style="margin-top:0px" />
+
+<ol>
+  <li><a href="https://www.amazon.com/gp/product/0863547125/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0863547125&amp;linkCode=as2&amp;tag=magrawala01-20&amp;linkId=485f1d0982232ef5a9bb0ea92f8ec951">The Visual Display of Quantitative Information (2nd Edition).</a> E. Tufte. Graphics Press.</li>
+  <li><a href="https://www.amazon.com/gp/product/0961392118/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0961392118&amp;linkCode=as2&amp;tag=magrawala01-20&amp;linkId=6c30ed9ed83114fdad446ef8e950b97d">Envisioning Information.</a> E. Tufte. Graphics Press.</li>
+  <li><strong><em>Optional Textbook.</em></strong> <a href="https://amzn.to/3i6MF5Z">Visualization Analysis and Design.</a> Tamara Munzner. A K Peters Visualization Series. CRC Press.</li>
+  <li><strong><em>Optional Reference.</em></strong> <a href="https://www.amazon.com/gp/product/1491921285/ref=as_li_tl?ie=UTF8&amp;tag=magrawala01-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1491921285&amp;linkId=e3486599bbe5b8e05925dd1166d9dff4">Interactive Data Visualization for the Web (2nd Edition).</a> Scott Murray. O’Reilly Press. [<a href="https://learning.oreilly.com/library/view/interactive-data-visualization/9781491921296/">Read Online</a>] [<a href="https://github.com/alignedleft/d3-book/">Code Examples on Github</a>]</li>
+</ol>
+
+<p>Your best bet is to order them <a href="https://www.amazon.com/gp/search?ie=UTF8&amp;tag=magrawala01-20&amp;linkCode=ur2&amp;linkId=5484a593c9149ad8da2535bb13b92d3f&amp;camp=1789&amp;creative=9325&amp;index=books&amp;keywords=Edward Tufte">online.</a>
+<strong>Please order soon. Readings will be assigned in the first week of class.</strong></p>
+
+<!-- ## Announcements ## -->
+
+<!-- # <a id="schedule"></a> Schedule # -->
+<div id="schedule"><h1 style="margin-bottom:0px">Schedule </h1></div>
+<hr style="margin-top:0px" />
+
+<!-- Week 1 -->
+<div id="week1" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week 1</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Tu Sep 15: The Purpose of Visualization</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/T5Mhfoj7jbDctB2r6">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec01-purpose.pdf">Slides</a>
+-->
+<a href="https://forms.gle/T5Mhfoj7jbDctB2r6">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec01-purpose.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<div> &nbsp; &nbsp;<strong><em>Assigned: </em></strong> <a href=" https://magrawala.github.io/cs448b-fa20/a1.html  ">Assignment 1</a>   <strong>(due   Sep 22  by 7am) </strong></div>
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required notebooks</em></strong> <br />
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Introduction to Vega-Lite (<a href=" https://observablehq.com/@stanfordvis/introduction-to-vega-lite  ">Javascript/Observable</a>) <br />
+
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 1: Information Visualization, In Readings in Information Visualization. Card, et al. (<a href=" https://magrawala.github.io/cs448b-fa20/assets/docs/CardMackinlaySchneid-Chap1.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Decision to launch the Challenger, In Visual Explanations. Tufte. (<a href=" https://magrawala.github.io/cs448b-fa20/assets/docs/challenger.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Representation and Misrepresentation. (Critique of Tufte's analysis). Boisjoly et al. (<a href=" http://www.onlineethics.org/cms/17453.aspx  ">web</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Graphs in Statistical Analysis. F. J. Anscombe. The American Statistician. (<a href=" http://www.jstor.org/stable/2682899  ">jstor</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<div style="font-size: 1.1em">
+<b>Th Sep 17: Data and Image Models</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/T5Mhfoj7jbDctB2r6">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec02-data.pdf">Slides</a>
+-->
+<a href="https://forms.gle/T5Mhfoj7jbDctB2r6">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec02-data.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required notebooks</em></strong> <br />
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Data Types, Graphical Marks, and Visual Encodings (<a href=" https://observablehq.com/@stanfordvis/data-types-graphical-marks-and-visual-encoding-channels  ">Javascript/Observable</a>) <br />
+
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 1: Graphical Excellence, In The Visual Display of Quantitative Information. Tufte. <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 2: Graphical Integrity, In The Visual Display of Quantitative Information. Tufte. <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 3: Sources of Graphical Integrity. In VDQI. Tufte. <br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Level of Measurement. (<a href=" http://en.wikipedia.org/wiki/Level_of_measurement  ">Wikipedia</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; On the theory of scales of measurement. Stevens. (<a href=" http://links.jstor.org/sici?sici=0036-8075(19460607)3:103:2684%3C677:OTTOSO%3E2.0.CO;2-G  ">jstor</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- Week 2 -->
+<div id="week2" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week 2</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Tu Sep 22: Visualization Design and Redesign</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/LgRCDG2SeVTvRbpR7">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec03-visdesigns.pdf">Slides</a>
+-->
+<a href="https://forms.gle/LgRCDG2SeVTvRbpR7">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec03-visdesigns.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<div> &nbsp; &nbsp;<strong><em>Due (by 7am):  </em></strong> <a href=" https://magrawala.github.io/cs448b-fa20/a1.html  ">Assignment 1</a>  </div>
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<div> &nbsp; &nbsp;<strong><em>Assigned: </em></strong> <a href=" https://magrawala.github.io/cs448b-fa20/a2.html  ">Assignment 2</a>   <strong>(due   Oct 6  by 10:30am) </strong></div>
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required notebooks</em></strong> <br />
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Data Transformation (<a href=" https://observablehq.com/@stanfordvis/data-transformation  ">Javascript/Observable</a>) <br />
+
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Design and Redesign in Data Visualization. Viegas and Wattenberg. (<a href=" https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9  ">web</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; The Power of Representation. Chapter 3 In Things that Make Us Smart. Norman. (<a href=" https://magrawala.github.io/cs448b-fa20/assets/docs/Norman-Chap3.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 4: Data-Ink and Graphical Redesign. In VDQI. Tufte. <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 5: Chartjunk. In VDQI. Tufte. <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 6: Data Ink Maximization and Graphical Design. In VDQI. Tufte. <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; The representation of numbers. Zhang and Norman. (<a href=" http://hci.stanford.edu/cs448b/papers/number-representation.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; In class redesign exercise (<a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/redesigns.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<div style="font-size: 1.1em">
+<b>Th Sep 24: Exploratory Data Analysis</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/LgRCDG2SeVTvRbpR7">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec04-eda.pdf">Slides</a>
+-->
+<a href="https://forms.gle/LgRCDG2SeVTvRbpR7">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec04-eda.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required notebooks</em></strong> <br />
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Scales, Axes and Legends (<a href=" https://observablehq.com/@stanfordvis/scales-axes-and-legends  ">Javascript/Observable</a>) <br />
+
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Polaris. Stolte, Tang, and Hanrahan. IEEE TVCG, 8(1), Jan 2002. (<a href=" http://hci.stanford.edu/cs448b/papers/Stolte_Polaris_TVCG.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Voyager. Wonsuphawasat et al. IEEE  TVCG, 22(1), 2016. (<a href=" https://idl.cs.washington.edu/papers/voyager/  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- Week 3 -->
+<div id="week3" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week 3</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Tu Sep 29: Using Space Effectively</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/whhPgC1x393ktFCa9">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec05-space2D.pdf">Slides</a>
+-->
+<a href="https://forms.gle/whhPgC1x393ktFCa9">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec05-space2D.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required notebooks</em></strong> <br />
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp;  Multi-View Composition (<a href=" https://observablehq.com/@stanfordvis/multi-view-composition  ">Javascript/Observable</a>) <br />
+
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Graphical Methods for Data Presentation. Cleveland. (<a href=" https://www.jstor.org/stable/2683401?seq=1#page_scan_tab_contents  ">jstor</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 8: Data Density and Small Multiples. In VDQI. Tufte.  <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 2: Macro/Micro Readings. In Envisioning Information. Tufte.  <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 4: Small Multiples. In Envisioning Information. Tufte.  <br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<div style="font-size: 1.1em">
+<b>Th Oct 1: Interaction</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/whhPgC1x393ktFCa9">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec06-interaction.pdf">Slides</a>
+-->
+<a href="https://forms.gle/whhPgC1x393ktFCa9">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec06-interaction.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required notebooks</em></strong> <br />
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Interaction (<a href=" https://observablehq.com/@stanfordvis/interaction  ">Javascript/Observable</a>) <br />
+
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Interactive dynamics for Visual Analysis. Heer and Shneiderman. (<a href=" http://portal.acm.org/ft_gateway.cfm?id=2146416&amp;type=pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; The death of interactive infographics? Baur. 2017 (<a href=" https://medium.com/@dominikus/the-end-of-interactive-visualizations-52c585dcafcb  ">web</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; In Defense of Interactive Graphics. Aisch. 2017 (<a href=" https://www.vis4.net/blog/posts/in-defense-of-interactive-graphics/  ">web</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Dynamic queries, starfield displays, and the path to Spotfire. Shneiderman. (<a href=" http://www.cs.umd.edu/hcil/spotfire/  ">web</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Visual queries for finding patterns in time series data, Hochheiser and Schneiderman. (<a href=" ftp://ftp.cs.umd.edu/pub/hcil/Reports-Abstracts-Bibliography/2002-06html/2002-06.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Postmortem of an example, Bertin. (<a href=" https://magrawala.github.io/cs448b-fa20/assets/docs/Bertin-Postmortem.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Classic systems from stat-graphics.org (<a href=" http://stat-graphics.org/movies/  ">videos</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- Week 4 -->
+<div id="week4" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week 4</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Tu Oct 6: Introduction to D3</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/u9k6Xj7P9C6RbAv59">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec07-introD3.pdf">Slides</a>
+-->
+<a href="https://forms.gle/u9k6Xj7P9C6RbAv59">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec07-introD3.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<div> &nbsp; &nbsp;<strong><em>Due (by 10:30am):  </em></strong> <a href=" https://magrawala.github.io/cs448b-fa20/a2.html  ">Assignment 2</a>  </div>
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<div> &nbsp; &nbsp;<strong><em>Assigned: </em></strong> <a href=" https://magrawala.github.io/cs448b-fa20/a3.html  ">Assignment 3</a>   <strong>(due   Oct 20  by 10:30am) </strong></div>
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required notebooks</em></strong> <br />
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Introduction to D3 (<a href=" https://observablehq.com/@stanfordvis/introduction-to-d3  ">Javascript/Observable</a>) <br />
+
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Let's Make a Scatterplot (will use in class) (<a href=" https://observablehq.com/@stanfordvis/lets-make-a-scatterplot  ">JavaScript/Observable</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Observable D3 gallery (<a href=" https://observablehq.com/@d3/gallery  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Mike Bostock's notebooks for learning D3 (<a href=" https://observablehq.com/@d3/learn-d3  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Interactive Data Visualization for the Web. 2nd Ed., Scott Murray. Chapters 4, 5, 6. (<a href=" https://learning.oreilly.com/library/view/interactive-data-visualization/9781491921296/  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; D3: Data Driven Documents. Bostock et al. (<a href=" http://vis.stanford.edu/files/2011-D3-InfoVis.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<div style="font-size: 1.1em">
+<b>Th Oct 8: D3 Tutorial</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/u9k6Xj7P9C6RbAv59">Submit Reading Response</a> | <a href="">Slides</a>
+-->
+<a href="https://forms.gle/u9k6Xj7P9C6RbAv59">Submit Response</a> | Slides
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required notebooks</em></strong> <br />
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Making D3 Charts Interactive (<a href=" https://observablehq.com/@stanfordvis/making-d3-charts-interactive  ">Javascript/Observable</a>) <br />
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Let's Make a Scatterplot (will use in class) (<a href=" https://observablehq.com/@stanfordvis/lets-make-a-scatterplot  ">Javascript/Observable</a>) <br />
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; D3 Exercises (will use in class) (<a href=" https://observablehq.com/@stanfordvis/d3-excercises  ">Javascript/Observable</a>) <br />
+
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Interactive Data Visualization for the Web. 2nd Ed. Scott Murray. Chapters 7, 8, 9. (<a href=" https://learning.oreilly.com/library/view/interactive-data-visualization/9781491921296/  ">html</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- Week 5 -->
+<div id="week5" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week 5</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Tu Oct 13: Perception</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/c2GCgFBjkuck1e3DA">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec09-perception.pdf">Slides</a>
+-->
+<a href="https://forms.gle/c2GCgFBjkuck1e3DA">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec09-perception.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Perception in visualization. Healey. (<a href=" http://www.csc.ncsu.edu/faculty/healey/PP/index.html  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Graphical perception. Cleveland and McGill. (<a href=" http://www.jstor.org/stable/2288400  ">jstor</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Chapter 3: Layering and Separation. In Envisioning Information. Tufte. <br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Gestalt and composition. In Course #13, SIGGRAPH 2002. Durand. (<a href=" http://graphics.csail.mit.edu/~fredo/SIG02_ArtScience/siggraph_Gestalt_talk.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; The psychophysics of sensory function. Stevens. (<a href=" https://www.jstor.org/stable/27827540?  ">jstor</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Crowdsourcing Graphical Perception. Heer and Bostock. ACM CHI 2010. (<a href=" http://vis.stanford.edu/files/2010-MTurk-CHI.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<div style="font-size: 1.1em">
+<b>Th Oct 15: Visual Explainers</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/c2GCgFBjkuck1e3DA">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec10-visExplainers.pdf">Slides</a>
+-->
+<a href="https://forms.gle/c2GCgFBjkuck1e3DA">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec10-visExplainers.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; The Pudding (read through at least 3 articles in detail) (<a href=" https://pudding.cool/  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Design for an Audience, Corum. (<a href=" http://style.org/ku/  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Narrative Visualization: Telling Stories with Data, Segel and Heer. (<a href=" http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Communicating with Interactive Articles. Hohman, Conlen, Heer and Chau. (<a href=" https://distill.pub/2020/communicating-with-interactive-articles/  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Ice World: Visualizing Science at the New York Times, Corum. (<a href=" http://style.org/sciviz/  ">html</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- Week 6 -->
+<div id="week6" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week 6</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Tu Oct 20: Color</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/V8xDz9U9TBza13Sg6">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec11-color.pdf">Slides</a>
+-->
+<a href="https://forms.gle/V8xDz9U9TBza13Sg6">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec11-color.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<div> &nbsp; &nbsp;<strong><em>Due (by 10:30am):  </em></strong> <a href=" https://magrawala.github.io/cs448b-fa20/a3.html  ">Assignment 3</a>  </div>
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<div> &nbsp; &nbsp;<strong><em>Assigned: </em></strong> <a href=" https://magrawala.github.io/cs448b-fa20/finalProject.html  ">Final Project: Proposal</a>   <strong>(due   Oct 29  by 10:30am) </strong></div>
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Color and information, In Envisioning Information, Tufte. <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Color Naming Models for Color Selection, Image Editing and Palette Design. Heer and Stone. (<a href=" http://vis.stanford.edu/papers/color-naming-models  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Color guidelines, Brewer. (<a href=" http://www.personal.psu.edu/faculty/c/a/cab38/ColorSch/ASApaper.html  ">html</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; The crayola-fication of the world. Bhatia. (<a href=" http://www.empiricalzeal.com/2012/06/05/the-crayola-fication-of-the-world-how-we-gave-colors-names-and-it-messed-with-our-brains-part-i/  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; A rule-based system for assisting color map selection, Bergman, Treinish and Rogowitz. (<a href=" https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCAQFjAA&amp;url=http%3A%2F%2Fwww.ninalp.com%2FART%2FPapers%2FColorMapSelection.pdf&amp;ei=-lIcVPzkAdCeyATtpIHwCA&amp;usg=AFQjCNGvTZTWngZsiDs7uskUEUQVawKjFw&amp;sig2=nIGCTIsxpHcTt0SHN_Vepg  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Charting color from the eye of the beholder. Landa, Fairchild. (<a href=" http://apps.usd.edu/coglab/schieber/pdf/Fairchild2005.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Color2Gray: Salience-preserving color removal. Gooch, Olsen, Tumblin, Gooch. (<a href=" http://www.cs.northwestern.edu/~ago820/color2gray/color2gray.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Demonstrations</em></strong> <br />
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; <a href=" http://colorbrewer2.org/  ">ColorBrewer2</a><br />
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; <a href=" http://www.brucelindbloom.com/  ">Bruce Lindbloom’s Useful color information, studies, and files</a><br />
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; <a href=" http://www.rit.edu/cos/colorscience/  ">Meet iCam: A Next-Generation Color Appearance Model</a><br />
+
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<div style="font-size: 1.1em">
+<b>Th Oct 22: Animation</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/V8xDz9U9TBza13Sg6">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec12-animation.pdf">Slides</a>
+-->
+<a href="https://forms.gle/V8xDz9U9TBza13Sg6">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec12-animation.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Animated Transitions in Statistical Data Graphics. Heer and Robertson. (<a href=" http://vis.berkeley.edu/papers/animated_transitions/  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Animation: Can it facilitate? Tversky, Morrison and Betrancourt. (<a href=" https://hci.stanford.edu/courses/cs448b/papers/Tversky_AnimationFacilitate_IJHCS02.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Principles of Traditional Animation Applied to Computer Animation. Lasseter. (<a href=" http://portal.acm.org/citation.cfm?doid=37401.37407  ">acm</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Intuitive Physics. McCloskey. (<a href=" http://www.spatial.maine.edu/~max/SIE554/IP.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Representing motion in a static image. Cutting. (<a href=" http://people.psych.cornell.edu/~jec7/pubs/98.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- Week 7 -->
+<div id="week7" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week 7</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Tu Oct 27: Network Layout</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/f4eAdZZe3gwKxHoV9">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec13-networkLayout.pdf">Slides</a>
+-->
+<a href="https://forms.gle/f4eAdZZe3gwKxHoV9">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec13-networkLayout.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Graph Visualization: A Survey. Herman, Melancon and Marshall. (<a href=" http://www.ivan-herman.net/professional/Publications/StarGraphVisuInInfoVis.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Hierarchical Edge Bundles. Holten. (<a href=" http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=4015425&amp;url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F2945%2F4015412%2F04015425.pdf%3Farnumber%3D4015425  ">ieee</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Let’s draw a graph. Khoury. (<a href=" https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-176.html  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Visual Exploration of Multivariate Graphs. Wattenberg. (<a href=" http://vis.berkeley.edu/files/chi06/Wattenberg_p811.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Improving Walker’s Algorithm to Run in Linear Time. Buchheim, Jünger and Leipert. (<a href=" http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=9491D76F9CD425F47DC1DB2DE6A455EA?doi=10.1.1.16.8757&amp;rep=rep1&amp;type=pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Dig-cola. Dwyer and Koren. (<a href=" http://www.research.att.com/groups/infovis/res/legacy_papers/DBLP-conf-infovis-DwyerK05.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; A Technique for Drawing Directed Graphs. Gansner, Koutsofios, North and Vo. (<a href=" http://www.research.att.com/groups/infovis/res/legacy_papers/DBLP-journals-tse-GansnerKNV93.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Demonstrations</em></strong> <br />
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; <a href=" http://visualcomplexity.com/  ">Visual Complexity - graph visualization gallery</a><br />
+
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<div style="font-size: 1.1em">
+<b>Th Oct 29: Network Analysis</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/f4eAdZZe3gwKxHoV9">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec14-networkAnalysis.pdf">Slides</a>
+-->
+<a href="https://forms.gle/f4eAdZZe3gwKxHoV9">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec14-networkAnalysis.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<div> &nbsp; &nbsp;<strong><em>Due (by 10:30am):  </em></strong> <a href=" https://magrawala.github.io/cs448b-fa20/finalProject.html  ">Final Project: Proposal</a>  </div>
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<div> &nbsp; &nbsp;<strong><em>Assigned: </em></strong> <a href=" https://magrawala.github.io/cs448b-fa20/finalProject.html  ">Final Project: Code and Video</a>   <strong>(due   Nov 21  by 11:59pm) </strong></div>
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Centrality and Prestige of Social Network Analysis. (pp. 169-198) Wasserman and Faust. (<a href=" https://magrawala.github.io/cs448b-fa20/assets/docs/WassermanFaustCentrality.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Balancing Systematic and Flexible Exploration of Social Networks. Perrer and Shneiderman. (<a href=" http://hcil2.cs.umd.edu/trs/2006-25/2006-25.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; The Structure and Function of Complex Networks (Sections 1 and 2 only pp. 1-8). Newman. (<a href=" http://arxiv.org/pdf/cond-mat/0303516.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; The Social Organization of Conspiracy. Baker and Faulkner. (<a href=" http://webuser.bus.umich.edu/wayneb/pdfs/networks/Conspiracy.pdf  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- Week 8 -->
+<div id="week8" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week 8</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Tu Nov 3: Election Day - No Class, VOTE!</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<div style="font-size: 1.1em">
+<b>Th Nov 5: Deconstructing Visualizations</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/oUCWNm6kEJKkaeUq6">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec15-deconstructingVisualizations.pdf">Slides</a>
+-->
+<a href="https://forms.gle/oUCWNm6kEJKkaeUq6">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec15-deconstructingVisualizations.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Revision: Automated Classification, Analysis and Redesign of Chart Images.Savva et al. (<a href=" http://vis.berkeley.edu/papers/revision/  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Graphical Overlays: Using Layered Elements to Aid Chart Reading. Kong and Agrawala. (<a href=" http://vis.berkeley.edu/papers/grover/  ">html</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Deconstructing and Restyling D3 Visualizations. Harper and Agrawala (<a href=" http://vis.berkeley.edu/papers/d3decon/  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Extracting References Between Text and Charts via Crowdsourcing. Kong et al. (<a href=" http://vis.berkeley.edu/papers/textref/  ">html</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- Week 9 -->
+<div id="week9" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week 9</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Tu Nov 10: Text Visualization</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/dm1bC1KPvcjEvy4V8">Submit Reading Response</a> | <a href="base_path/assets/slides/Lec16-textVisV2.pdf">Slides</a>
+-->
+<a href="https://forms.gle/dm1bC1KPvcjEvy4V8">Submit Response</a> |  <a href=" https://magrawala.github.io/cs448b-fa20/assets/slides/Lec16-textVisV2.pdf  ">Slides</a> 
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Mapping Text with Phrase Nets. van Ham, Wattenberg and Viégas. 2009 (<a href=" http://hint.fm/papers/phrase-net-rev5.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Ch. 11: Info. Vis. for Text Analysis. In Search User Interfaces. Hearst 2009. (<a href=" http://searchuserinterfaces.com/book/sui_ch11_text_analysis_visualization.html  ">html</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Ch. 10: Info. Vis. for Search Interfaces. In Search User Interfaces. Hearst 2009. (<a href=" http://searchuserinterfaces.com/book/sui_ch10_visualization.html  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Designing Model-Driven Visualizations for Text Analysis. Chuang et al. 2012 (<a href=" http://idl.cs.washington.edu/papers/designing-model-driven-vis  ">html</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Termite: Visualization Techniques for Assessing Textual Topic Models. Chuang et al., 2012. (<a href=" http://idl.cs.washington.edu/papers/termite  ">html</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<div style="font-size: 1.1em">
+<b>Th Nov 12: Visualizing Uncertainty (guest lecture: Jessica Hullman)</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<div style="font-size: 0.95em; margin-bottom: 5px">
+&nbsp; &nbsp;
+<!--
+<a href="https://forms.gle/dm1bC1KPvcjEvy4V8">Submit Reading Response</a> | <a href="">Slides</a>
+-->
+<a href="https://forms.gle/dm1bC1KPvcjEvy4V8">Submit Response</a> | Slides
+</div>
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Required readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Hypothetical Outcome Plots. Hullman, Resnick, Adar. (<a href=" https://scholar.google.com/scholar?cluster=7393014124263246152  ">pdf</a>)<br />
+
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+&nbsp; &nbsp;<strong><em>Optional readings</em></strong> <br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Matching Visual Saliency to Confiedence in Plots of Uncertain Data. Feng et al. (<a href=" https://ieeexplore.ieee.org/iel5/2945/5613414/05613435.pdf?casa_token=oYbvlgmpZ4YAAAAA:5zWaINXan_3gXgHtNM98BtqtWsfdfKjtXZ19XUnEdLhZ4uK2viCwoBedUW0hflgOm2wRlxs  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; Uncertainty Displays Using Quantile Dotplots. Fernandes et al. (<a href=" http://users.eecs.northwestern.edu/~jhullman/pn1957-fernandes.pdf  ">pdf</a>)<br />
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; The Visual Uncertainty Experience. Hullman. (<a href=" https://www.youtube.com/watch?v=pTVAn4oLvbc&amp;index=19&amp;list=PLlgxAbM67lYKz_NssZ1DdDwIRIWbkDlN  ">YouTube</a>)<br />
+
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- Week 10 -->
+<div id="week10" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week 10</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Tu Nov 17: Final Project Design Review and Feedback</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<div style="font-size: 1.1em">
+<b>Th Nov 19: Final Project Design Review and Feedback</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- Week Final Project Due -->
+<div id="weekFinal Project Due" style="background-color: #eeeeee; font-size: 1.1em">
+<b>Week Final Project Due</b>
+</div>
+
+<div style="font-size: 1.1em">
+<b>Sa Nov 21: Final Submission</b>
+</div>
+
+<!-- Set up reading response and slides links -->
+
+<!-- Assignments due/out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<!-- handle assignments out -->
+
+<!-- handle assignments due -->
+
+<div> &nbsp; &nbsp;<strong><em>Due (by 11:59pm):  </em></strong> <a href=" https://magrawala.github.io/cs448b-fa20/finalProject.html  ">Final Project: Code and Video</a>  </div>
+
+<!-- handle assignments out -->
+
+<!-- Required Notebooks loop -->
+<div>
+
+</div>
+
+<!-- Required readings loop -->
+<div>
+
+</div>
+
+<!-- Optional readings loop -->
+<div>
+
+</div>
+
+<!-- Demonstrations loop -->
+<div>
+
+</div>
+
+<!-- Presentations I -->
+<div>
+
+</div>
+
+<!-- Presentations II -->
+<div>
+
+</div>
+
+<!-- Final Presentations -->
+<div>
+
+</div>
+
+<div> &nbsp; </div>
+
+<!-- # <a id="teachingStaff"></a> Teaching Staff #-->
+<div id="teachingStaff"><h1 style="margin-bottom:0px">Teaching Staff</h1></div>
+<hr style="margin-top:0px" />
+
+<p><strong>Instructor:</strong> <a href="http://graphics.stanford.edu/~maneesh">Maneesh Agrawala</a><br />
+    Office Hours: 1:30-3:00pm Wednesdays, <a href="https://canvas.stanford.edu/courses/123902/external_tools/5384">Canvas/Zoom</a>.<br />
+<strong>Course Assistant:</strong> <a href="https://dhkim16.github.io/">Dae Hyun Kim</a><br />
+    Office Hours: 7:00-8:00pm Tuesdays, <a href="https://canvas.stanford.edu/courses/123902/external_tools/5384">Canvas/Zoom</a>.</p>
+
+<p>To contact us please use
+<a href="https://piazza.com/stanford/fall2020/cs448b/">Piazza</a>. This is the
+fastest way to get a response.</p>
+
+<!-- # <a id="assignmentsRequirements"></a> Assignments and Requirements # -->
+<div id="assignmentsRequirements"><h1 style="margin-bottom:0px">Assignments and Requirements</h1></div>
+<hr style="margin-top:0px" />
+
+<p><a href="https://magrawala.github.io/cs448b-fa20/classParticipation.html">Class Participation</a> (10%)<br />
+<a href="https://magrawala.github.io/cs448b-fa20/a1.html">Assignment 1: Visualization Design</a> (10%)<br />
+<a href="https://magrawala.github.io/cs448b-fa20/a2.html">Assignment 2: Exploratory Data Analysis</a> (15%)<br />
+<a href="https://magrawala.github.io/cs448b-fa20/a3.html">Assignment 3: Creating Interactive Visualization Software</a> (25%)<br />
+<a href="https://magrawala.github.io/cs448b-fa20/finalProject.html">Final Project</a> (40%)</p>
+
+<p><strong>Late Policy:</strong> We will deduct 10% for each day an assignment is late.</p>
+
+<p><b>Plagiarism Policy:</b>
+Assignments should consist primarily of your original work, building off of others’ work–including 3rd party libraries, public source code examples, and design ideas–is acceptable and in most cases encouraged. However, failure to cite such sources will result in score deductions proportional to the severity of the oversight.</p>
+
+<!--  LocalWords:  permalink Unsplash nav navsidebar APIs px nd Tufte
+ -->
+<!--  LocalWords:  learningGoals O'Reilly Github str num endcomment
+ -->
+<!--  LocalWords:  weekNum endif eeeeee lec responseLink responseURL
+ -->
+<!--  LocalWords:  elsif href endcapture slidesLink slidesURL url br
+ -->
+<!--  LocalWords:  lecLinks nbsp dateDue dateDueNotes dateOut endfor
+ -->
+<!--  LocalWords:  observableLink observableURL Javascript colabLink
+ -->
+<!--  LocalWords:  colabURL Colab requiredReadings optionalReadings
+ -->
+<!--  LocalWords:  Jen Cardona Carmelle Millar Yoon Huynh Kashif Ijaz
+ -->
+<!--  LocalWords:  Nazir Schumacher Sidra Rebecca Chenchen Shacklett
+ -->
+<!--  LocalWords:  Shu Junwon Alexa Siu mangkornpan Yinchen Xu Jia Yu
+ -->
+<!--  LocalWords:  Yao Jiaxi Ziran Zhang Chun Kexin Zhao Maneesh TBD
+ -->
+<!--  LocalWords:  teachingStaff Agrawala assignmentsRequirements
+ -->
+<!--  LocalWords:  Lathrop
+ -->
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+ <!-- MA: 9/1/17 Commented out page footer -->
+
+    <script src="https://magrawala.github.io/cs448b-fa20/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
