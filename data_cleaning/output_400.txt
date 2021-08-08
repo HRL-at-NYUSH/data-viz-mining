@@ -1,0 +1,100 @@
+Tobacconist	1254, “Tobacconist”		
+Cash Girl	4129, “Cashier”	5119, “Gillie”	9132, “Washer, cask”
+Midwife	2232, “Midwife”	2232, “Midwife-tutor”	2232, “Manager, midwife”
+Lives Home	8125, “Honer”	5249, “Linesman”	6144, “Leader, home, nursing home”
+Cart Driver	8239, “Driver, cart”	8212, “Driver”	9119, “Drover”
+Works At Paper Boxes	8142, “Paver”	9134, “Boxer”	4131, “Planner, works”
+Keeps None House	6231, “Keeper, house”	6139, “Keeper, horse”	9233, “Housemaid”
+Clerk At Store	4159, “Clerk”	4133, “Clerk, stores”	9260, “Storer”
+Fruit Stand	5112, “Fruitman”	1254, “Fruiterer”	6139, “Studhand”
+Dry Goods Store	9260, “Storer”	9260, “Storeman”	8134, “Sorter, stores”
+Oysterman	8117, “Tilterman”	7124, “Costermonger”	5119, “Fisherman”
+Button Hole Maker	8137, “Maker, hole, button”	8129, “Maker, button”	8137, “Holer, button”
+Farm Hand	9111, “Hand, farm”	9111, “Handyman, farm”	5111, “Farmer”
+Clothing	2461, “Technologist, clothing”	3422, “Designer, clothing”	5414, “Cutter, clothing”
+Licensed Vender	1224, “Licensee”	9112, “Verderer”	9112, “Verderor”
+House Duties	9233, “Housemaid”	6144, “Houseparent”	1254, “Hosier”
+Parasol Maker	5419, “Maker, marker”	9249, “Macer”	5224, “Maker, meter”
+Works Out	8129, “Worksetter”	3231, “Worker, youth”	1121, “Manager, works”
+Vender	9112, “Verderer”	9112, “Verderor”	8129, “Veiner”
+Optician	2214, “Optician”	3239, “Officiant”	6148, “Mortician”
+Steam Fitter	5314, “Fitter, steam”	8119, “Fritter”	5223, “Fitter, steel”
+Glass Cutter	5316, “Cutter, glass”	9119, “Cutter, grass”	5441, “Cutter, letter, glass”
+Works In Tobacco Factory	8111, “Worker, tobacco”	9139, “Worker, factory”	1254, “Tobacconist”
+R. R. Clerk	4159, “Clerk”	4131, “Clerk-buyer”	4159, “Clerk-typist”
+Tailoring For Shop	5414, “Tailor”	5211, “Forger”	8129, “Forker”
+Sail Maker	5419, “Maker, sail”	5419, “Maker, marker”	8114, “Maker, saline”
+Publisher	1259, “Publisher”	2137, “Publisher, desktop”	1224, “Publican”
+Works In Paper Factory	9139, “Worker, factory”	9134, “Packer, factory”	8142, “Paver”
+Sign Painter	5323, “Painter”	8114, “Tinter, paint”	5421, “Printer-down”
+Chemist	2111, “Chemist”	3413, “Chorister”	3415, “Cellist”
+Cigar Box Maker	8139, “Maker, box, cigar”	8111, “Maker, cigar”	5419, “Maker, marker”
+Drives Cart	8239, “Driver, cart”	8212, “Driver”	6139, “Carer, cat”
+Reporter	2471, “Reporter”	3536, “Exporter”	9260, “Porter”
+Lace Work	5411, “Worker, lace”	8125, “Worker, lathe”	8129, “Worker, wire”
+Shoe Cutter	5413, “Cutter, shoe”	8129, “Cutler”	5312, “Cutter, stone”
+Furniture	1254, “Fruiterer”	3422, “Designer, furniture”	5323, “Polisher, furniture”
+Silver Plater	8118, “Plater, silver”	5214, “Plater”	9272, “Silverman”
+Works In Pencil Factory	9139, “Worker, factory”	8129, “Worksetter”	3413, “Actor”
+Hotel	1221, “Hotelier”	6139, “Hostler”	1221, “Keeper, hotel”
+Cigar Mkr	8111, “Maker, cigar”	8111, “Maker, cigarette”	8111, “Buncher, cigar mfr”
+Lace Worker	5411, “Worker, lace”	8125, “Worker, lathe”	3239, “Worker, lay”
+Boot &amp; Shoe Maker	5413, “Maker, boot and shoe”	5413, “Maker, boot”	5413, “Maker, shoe”
+Keeping H.			
+Carpet Factory	5315, “Carpenter”	3413, “Actor”	6145, “Carer”
+Fur Sewer	8137, “Sewer, fur”	8126, “Sewerman”	8134, “Sorter, fur”
+Stationer	1254, “Stationer”	1161, “Stationmaster”	9260, “Keeper, stationery”
+Shoe Dealer	1254, “Dealer, sheep”	3532, “Dealer, share”	3239, “Healer”
+Iron Worker	9234, “Ironer”	5221, “Borer, iron”	5211, “Worker, iron, ornamental”
+Type Setter	5421, “Setter, type”	9279, “Sitter”	8113, “Stenter”
+Works In Tailor Shop	5414, “Tailor”	5414, “Tailoress”	9260, “Worker, ship”
+Barber Shop	6221, “Barber”	8123, “Borer, shot”	9274, “Barperson”
+Brickmason	5312, “Bricklayer”		
+Attendant	3111, “Attendant, laboratory”	3239, “Attendant, welfare”	4135, “Attendant, library”
+Works At Cigars	8129, “Worksetter”	1121, “Manager, works”	2111, “Chemist, works”
+Candy Maker	5419, “Maker, marker”	5449, “Maker, candle”	8137, “Maker, canopy”
+Brewery	2129, “Brewer, brewery”	8111, “Brewer”	1121, “Manager, brewery”
+Caulker	5214, “Caulker”	5214, “Caulker-burner”	8129, “Cutler”
+Retail Grocery	1254, “Grocer”	1254, “Retailer”	5112, “Grower”
+Speculator			
+Real Estate Agt.	3544, “Agent, estate”	5319, “Dealer, estate”	1251, “Manager, agent, estate”
+Butler	6240, “Butler”	8137, “Burler”	8113, “Beetler”
+Clerk Store	4159, “Clerk”	4133, “Clerk, stores”	9260, “Storer”
+Retail Liquor Dealer	1254, “Retailer”	3239, “Healer”	8113, “Dewer”
+Hod Carrier	9120, “Carrier, hod”	9139, “Carrier”	8114, “Currier”
+Iceman	8114, “Sizeman”	3313, “Fireman”	8131, “Wireman”
+H Work	8129, “Worker, wire”	4131, “Planner, work”	9139, “Distributor, work”
+Stable Man	6139, “Stableman”	8111, “Man, malt”	4133, “Man, sample”
+Liquor Saloon	8114, “Blender, liquor”	9273, “Boy, saloon”	9274, “Attendant, saloon”
+Book Agent	2129, “Agent, patent”	7129, “Agent, bank”	6212, “Agent, booking, travel agents”
+Waiter In Restaurant	9273, “Waiter, restaurant”	9273, “Waiter”	3412, “Writer”
+Work In Store	9260, “Storer”	9260, “Storeman”	8134, “Sorter, stores”
+Clerk-Store	4133, “Clerk-storeman”	4133, “Clerk-storekeeper”	4131, “Clerk-buyer”
+Hardware			
+Canal Boatman	8232, “Boatman”	9120, “Canalman”	9274, “Barman”
+Dock Builder	5319, “Builder”	9260, “Docker”	6240, “Butler”
+At Service	1121, “Manager, service”	3119, “Technician, service”	4159, “Administrator, service”
+Wife	9273, “Waiter, wine”	8129, “Winder, wire”	9111, “Wife, farmer's”
+Wine Merchant	1254, “Merchant, wine”	9273, “Waiter, wine”	8129, “Winder, wire”
+Dress Mkr	5414, “Maker, dress”	5414, “Dressmaker”	8117, “Drosser”
+Telegraph Boy	7214, “Telegraphist”	5442, “Bowyer”	2434, “Topographer”
+Artificial Flower Maker	5449, “Maker, flower, artificial”	5419, “Maker, marker”	9249, “Macer”
+Works In Foundry	9139, “Worker, foundry”	8129, “Worksetter”	9234, “Worker, laundry”
+Silversmith	5449, “Silversmith”	9272, “Silverman”	3422, “Designer, silversmith”
+Stenographer	4217, “Stenographer”	5421, “Stereographer”	2217, “Sonographer”
+Traveling Salesman	3542, “Salesman, travelling”	8134, “Scalesman”	8134, “Scaleman”
+Designer	8113, “Desizer”	3122, “Designer-detailer”	3422, “Designer, interior design”
+R.R. Conductor	3415, “Conductor, ENTERTAINMENT”	3415, “Conductor, music”	3415, “Conductor, musical”
+Service	1121, “Manager, service”	3119, “Technician, service”	4159, “Administrator, service”
+Clerks In Store	9260, “Storer”	4133, “Clerk, stores”	4159, “Clerk”
+Packer	9134, “Packer”	9260, “Racker”	8134, “Packer-grader”
+Going School	1225, “Manager, school, riding school”	2314, “Master, school, secondary school”	2314, “Mistress, school, secondary school”
+Works In Flax Mill	9139, “Worker, mill”	8129, “Worksetter”	5414, “Milliner”
+Dry Goods Dealer	7130, “Manager, goods, dry”	8211, “Driver, goods”	3239, “Healer”
+Telegraph Messenger	9211, “Messenger”	7214, “Telegraphist”	9119, “Musseler”
+Hat Maker	5419, “Maker, hat”	5419, “Maker, marker”	9249, “Macer”
+Watchmaker	5224, “Watchmaker”	9241, “Watchman”	
+Provision Dealer	3239, “Healer”	8113, “Dewer”	8113, “Degger”
+Law Student	2419, “Lawyer”	6139, “Studhand”	2231, “Nurse, student”
+Book-Keeper	4122, “Bookkeeper”	4122, “Bookkeeper-cashier”	4122, “Bookkeeper-typist”
+Soldier	3311, “Soldier”	8131, “Solderer”	5313, “Slater”

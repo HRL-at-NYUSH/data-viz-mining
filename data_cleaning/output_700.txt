@@ -1,0 +1,100 @@
+Domestic Service	9233, “Domestic”	9233, “Servant, domestic”	6231, “Attendant, domestic service”
+Works In Shoe Store	9260, “Storer”	5413, “Worker, shoe”	9260, “Storeman”
+Bootblack Or News Boy	5442, “Bowyer”	1254, “Agent, news”	2471, “Writer, news”
+Works In Soap Factory	8114, “Worker, soap”	9139, “Worker, factory”	8129, “Worksetter”
+Priest	2444, “Priest”	1115, “President”	2219, “Prosthetist”
+D Servant	9233, “Servant”	3312, “Sergeant”	3311, “Sergeant-Major”
+Manufacturer	5112, “Manufacturer, seed”	5223, “Manufacturer, car”	5224, “Manufacturer, instrument”
+Kalsominer			
+Slipper Maker	5413, “Maker, slipper”	5419, “Maker, marker”	8113, “Snipper”
+Long Shore	9260, “Storer”	5211, “Shoer, horse”	8134, “Sorter, stores”
+Button Maker	8129, “Maker, button”	5419, “Maker, marker”	5419, “Marker, button”
+Com. Merchant	1254, “Merchant, coal”	7125, “Merchandiser”	5223, “Mechanic”
+Bunch Maker	8111, “Maker, bunch”	5419, “Maker, marker”	8117, “Maker, punch”
+Wholesale Grocer	1254, “Grocer”	1254, “Wholesaler”	5112, “Grower”
+Travelling Agent	6212, “Agent, travel”	2129, “Agent, patent”	3542, “Traveller”
+Keeps Hs.	8123, “Keeker”	2318, “HMIS”	
+Book Binding	5423, “Binder, book”	8113, “Bouker”	8113, “Bowker”
+Long Shore Man	9241, “Man, lodge”	8111, “Man, malt”	8113, “Man, shoddy”
+Milk Store	9260, “Storer”	9119, “Milker”	9260, “Storeman”
+Picture Frame Maker	5442, “Maker, frame, picture”	5442, “Framer, picture”	5419, “Maker, marker”
+Flour Merchant	7125, “Merchandiser”	5322, “Floorer”	5223, “Mechanic”
+Domestic Work	9233, “Domestic”	9233, “Worker, domestic”	8129, “Worker, wire”
+Mason &amp; Builder	5312, “Mason”	5319, “Builder”	5312, “Hand, mason”
+Horseshoer			
+Carpet Layer	5322, “Layer, carpet”	2419, “Lawyer”	5315, “Carpenter”
+Works In Saw Mill	8121, “Worker, mill, saw”	8121, “Miller, saw”	9139, “Worker, mill”
+Ice Business	8111, “Icer”	1150, “Banker, business”	2212, “Psychologist, business”
+Errands			
+Book Publisher	1259, “Publisher”	5413, “Polisher, boot”	8113, “Bouker”
+Works At Dressmaking	5414, “Dressmaker”	8129, “Worksetter”	1121, “Manager, works”
+Wks Brewery	2129, “Brewer, brewery”	8111, “Brewer”	1121, “Manager, brewery”
+Iron Molder	5212, “Moulder, iron”	9234, “Ironer”	5212, “Moulder, pipe, iron”
+Carriage Driver	8214, “Driver, carriage”	8212, “Driver”	9119, “Drover”
+Cabnet Maker	5442, “Maker, cabinet”	5419, “Maker, marker”	9249, “Macer”
+House Builder	5319, “Builder, house”	5319, “Builder”	8115, “Builder, hose”
+Jewelry			
+Iron Merchant	9234, “Ironer”	7125, “Merchandiser”	5223, “Mechanic”
+Works In Tannery	8114, “Tanner”	8114, “Worker, tannery”	9134, “Worker, cannery”
+Works In Butcher Shop	5431, “Butcher”	5431, “Shopman, butcher's”	9260, “Worker, ship”
+Furniture Store	9260, “Storer”	9260, “Storeman”	8134, “Sorter, stores”
+In Store	9260, “Storer”	9260, “Storeman”	8134, “Sorter, stores”
+Straw Sewer	8126, “Sewerman”	8121, “Sawyer”	8113, “Dewer”
+Works In Printing Office	2121, “Officer, works”	9219, “Worker, office”	4129, “Officer, pricing”
+Clothing Clerk	4159, “Clerk”	4129, “Clerk, costing”	4131, “Clerk, coding”
+Keeps Laundry	1259, “Keeper, laundry”	9234, “Laundress”	9234, “Launderer”
+Laberer	9134, “Labeller”	8115, “Latexer”	9120, “Labourer, plasterer's”
+Works In Lumber Yard	9260, “Worker, yard”	9111, “Lamber”	9112, “Lumberjack”
+Washing &amp; C	8114, “Egger and washer”	6125, “Aid, teaching”	8139, “Hand, wiring”
+Waiter In Saloon	9273, “Waiter”	3412, “Writer”	9273, “Waitress”
+Works In Sugar House	8111, “Worker, sugar”	9233, “Housemaid”	8129, “Worksetter”
+Insurance Broker	3532, “Broker, insurance”	2444, “Brother”	8118, “Browner”
+Hardware Store	9260, “Storer”	9260, “Storeman”	8134, “Sorter, stores”
+Apothecary	3219, “Apothecary”		
+Lodging House	1221, “Manager, house, lodging”	6232, “Warden, lodging house”	6240, “Deputy, lodging house”
+Unemploy			
+Works In Grocery Store	9260, “Storer”	1254, “Grocer”	9260, “Storeman”
+Wks In Foundry	1121, “Manager, foundry”	1121, “Owner, foundry”	5212, “Corer, foundry”
+Lady	2419, “Lawyer”	2444, “Superior, lady”	9233, “Lady, cleaning”
+Bookfolder	5423, “Bookbinder”	7111, “Bookseller”	6211, “Bookmaker”
+Tobacco Factory	1254, “Tobacconist”	3413, “Actor”	8111, “Worker, factory, tobacco mfr”
+Helps Keep House	6231, “Keeper, house”	6139, “Keeper, horse”	9233, “Help, home”
+Laboror			
+Keeping Boarders	9274, “Barperson”	6221, “Barber”	8121, “Brander”
+Clk. In Store	9260, “Storer”	9260, “Storeman”	4133, “Clerk, stores”
+Works At Lace	5411, “Worker, lace”	8129, “Worksetter”	8125, “Worker, lathe”
+Sister Of Mercy	2231, “Sister”	9279, “Sitter”	1254, “Mercer”
+Clothing Dealer	3239, “Healer”	8113, “Dewer”	8113, “Degger”
+Works At Pianos	3415, “Pianist”	8129, “Worksetter”	1121, “Manager, works”
+Alongshore	9260, “Longshoreman”		
+Salesman Dry Goods	8134, “Scalesman”	8134, “Scaleman”	3541, “Salesman-buyer”
+Paper Factory	9134, “Packer, factory”	8142, “Paver”	8129, “Lapper, paper”
+R. R. Conductor	3415, “Conductor, ENTERTAINMENT”	3415, “Conductor, music”	3415, “Conductor, musical”
+Laboring			
+Tailores	5414, “Tailoress”	5414, “Tailor”	1190, “Manager, tailor's”
+Crockery Store	9260, “Storer”	8137, “Clocker”	9260, “Storeman”
+Private Lady	2419, “Lawyer”	2319, “Teacher, PRIVATE”	2319, “Tutor, private”
+Notary Public	2419, “Notary”	1224, “Publican”	2472, “Publicist”
+Brown Stone Cutter	5312, “Cutter, stone”	8129, “Cutler”	8114, “Cutter, sponge”
+Hackman	9139, “Jackman”	9139, “Hookman”	9260, “Hatchman”
+Factory Hand	9139, “Worker, factory”	8111, “Worker, factory, brewery”	8111, “Worker, factory, distillery”
+Tobacco Merchant	1254, “Tobacconist”	7125, “Merchandiser”	5223, “Mechanic”
+Works In Fancy Store	9260, “Storer”	9260, “Storeman”	8134, “Sorter, stores”
+Paper Dealer	8142, “Paver”	5319, “Dealer, property”	8129, “Lapper, paper”
+Keeping Store	9260, “Storer”	9260, “Keeper, store”	9260, “Storeman”
+Wine Dealer	9273, “Waiter, wine”	8129, “Winder, wire”	3239, “Healer”
+Confectionary	5432, “Confectioner”	5432, “Maker, confectionery, FLOUR CONFECTIONERY”	8111, “Maker, confectionery, SUGAR CONFECTIONERY”
+Electrician	5241, “Electrician”	2111, “Electro-chemist”	8118, “Electroplater”
+Kitchen Servant	9233, “Servant”	3312, “Sergeant”	3311, “Sergeant-Major”
+Retail Liquor	1254, “Retailer”	1190, “Director, retail”	1190, “Manager, retail”
+Sea Captain	2444, “Chaplain”	2231, “SEN”	9273, “Seater, catering”
+Press Feeder	8125, “Presser”	8113, “Reeder”	9119, “Weeder”
+Clerk Grocery	4159, “Clerk”	1254, “Grocer”	4113, “Clerk, property”
+Sash &amp; Blind Maker	5449, “Maker, blind”	5419, “Maker, marker”	9249, “Macer”
+Works In Hat Factory	5414, “Worker, hat”	9139, “Worker, factory”	8129, “Worksetter”
+Fancy Goods Store	9260, “Storer”	9260, “Storeman”	8134, “Sorter, stores”
+Feather Curler	8113, “Curler, feather”	8129, “Cutler”	8113, “Beater, feather”
+Longshore Man	9260, “Longshoreman”	8111, “Man, malt”	5312, “Mason”
+Orderly	6141, “Nurse, orderly”	6141, “Orderly, hospital”	6141, “Orderly, medical”
+Real Estate Agt	3544, “Agent, estate”	5319, “Dealer, estate”	1251, “Manager, agent, estate”
+General Housework	1171, “General”	2114, “Genealogist”	6144, “Houseparent”
