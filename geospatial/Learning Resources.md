@@ -69,3 +69,4 @@ Python can be used in QGIS though a python console and API.  See the PyQGIS Deve
 - [15 Python Libraries for GIS and Mapping](https://gisgeography.com/python-libraries-gis-mapping/)
 - [Essential geospatial Python libraries](https://chrieke.medium.com/essential-geospatial-python-libraries-5d82fcc38731)
 - [GIS, Cartographic and Spatial Analysis Tools: Python - Columbia University Library](https://guides.library.columbia.edu/geotools/Python)
+- [Open Street Map Visualization](http://projects.mocnik-science.net/osm-vis/)
