@@ -1,4 +1,4 @@
-
+first = '''
 import shapely
 from shapely.geometry import Point # Point class
 from shapely.geometry import shape # shape() is a function to convert geo objects through the interface
@@ -30,7 +30,24 @@ def get_loc(p):
     except:
         return None
 import pandas as pd
-data = pd.read_csv("0.csv")
+data = pd.read_csv("'''
+second = '''.csv")
 data["New"] =  data["Coordinates"].progress_apply(get_loc)
 df = pd.DataFrame(data)
-df.to_csv("0_geo_out.csv")
+df.to_csv("'''
+third = '''_geo_out.csv")'''
+
+init = 0
+while init<=11871:#871:
+    with open('proc_'+str(init)+'.py','w',encoding='utf-8') as f:
+        f.write(first+str(init)+second+str(init)+third)
+    init = init+1
+import pandas as pd
+g = pd.read_csv('geocoded_census_for_all_year.csv')
+i = 0
+start = 0
+while i<=11871:#871:
+    p = g[start:start+1000]
+    p.to_csv(str(i)+'.csv')
+    start = start+1000
+    i+=1
