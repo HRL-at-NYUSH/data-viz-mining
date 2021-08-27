@@ -28,6 +28,10 @@
 	- During the process of working with Bromley and also after reading the paper by Mauricio from NYPL "Historical map polygon and feature extractor", I realized that Sanborn maps are more suitable for automatic extraction. This is mainly because 1) visual elements in Sanborn are spaced more spread-out compared to the tight layout of Bromley (e.g. street names or even house numbers rarely touch the boundary of building footprints), 2) the fonts of house numbers in Sanborn map has more consistent style compared to Bromley (although both are hand-written) and every house is numbered not only head and tail of street segment. The original reason for favoring Bromley is that NYPL has nice, integrated Bromley layers at time points around the turn of century. But the quality of Sanborn outweights this benefit of Bromley. I have thus spent some time to identify the Sanborn-style maps and layers and collected them.
 	- The roadmap for Map Color-based Approach: auto-finetune-main-color -> color-mask-extraction -> contour-detection-and-simplication -> house-number-ocr.
 
+8. Floodfill Approach (20210810-20210826)<br>
+	- Floodfill approach works well with street detection, which can be inverted to get rough city block contours. Then, footprints can be extracted by doing floodfill from non-building boundaries points within the city block contour. Adaptive thresholding, morphology operations, and an iterative, centrifugal sampling method are used to find seed pixels for the footprint floodfills. After the floodfill, opencv approxPoly are used to smooth the shapes of footprints and convex hulls are found. 
+	- The next steps are: 1) make footprint shape more accurate by checking and subtracting the difference between convex hull and approx contour from the convex hull, 2) detecting and ocr'ing house numbers and linking them to the closet footprints, 3) ocr'ing other textual information overlayed on buldings, 4) extract other features such as dots, crosses, skylights, dumb waiters, and elevators. 
+
 ## Appendix
 
 **Rasterio**
